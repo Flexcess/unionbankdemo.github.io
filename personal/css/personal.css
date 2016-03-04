@@ -1,0 +1,48 @@
+.currentBanner{
+    background: url(../../images/UBI_Banners_personal_current_account.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 300px;    
+}
+
+.currentBannerBank{
+    background-image: url(../../images/UBI_Banners_personal_current_account.jpg); 
+}
+
+.regsavings{
+    background-image: url(../../images/UBI_Banners_personal_savings.jpg);
+}
+
+.familySavings{
+    background-image: url(../../images/UBI_family_savings.jpg);   
+    height: 505px; 
+}
+
+.salary{
+    background-image: url(../../images/UBI_Salary_account.jpg);
+}
+
+.defence{
+    background-image: url(../../images/UBI_USSA_Defence.jpg);    
+}
+
+.content, #tabs{
+    font-size: 20px;
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1)  {     
+    .font-s {
+        font-size: 1.6em;
+    }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+    .font-s {
+        font-size: 1em;
+    }
+}

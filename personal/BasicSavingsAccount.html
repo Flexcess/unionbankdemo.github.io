@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <title>Union Bank Of India Home Page</title>
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <script src="../js/jquery-2.2.1.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="../css/skeleton.css">
+	<link rel="stylesheet" href="../css/custom.css"> 
+    <link rel="stylesheet" href="css/personal.css">
+    <script>
+       $(function(){
+            $( "#tabs" ).tabs();
+            
+            $('#bsbdaLink').click(function(){
+                $('#bsbdaTab').click();
+            })
+            
+            $('#bsbdsLink').click(function(){
+                $('#bsbdsTab').click();
+            })
+       })
+    </script>
+</head>
+<body>
+  <!-- Header -->
+	<div id="topNav" class="u-full-width navbar-fixed-top bg-white">
+		<span class="u-pull-left inline-block"><a href="../Home.html"><a href="../Home.html"><img src="../images/icons/logo.png" alt="Union Bank of India logo"></a></span>  
+		<span class="u-pull-right inline-block">
+			<span class="inline-block" style="height: 105px;"></span>
+			<img src="../images/icons/menu-search.png" alt="search" class="align-middle margin-right">
+			<span class="inline-block margin-left margin-right align-middle" style="border:1px solid blue;height: 45px;"></span>
+			<img class="margin-left-l align-middle" src="../images/icons/hamburger.png" alt="hamburger-menu">
+		</span>
+	</div>
+	<!-- Header End -->
+	<span class="u-cf"></span>
+    <div class="content">
+        <div class="regsavings currentBanner u-full-width bgap"></div>
+        <div class="leftingap rightingap">
+            <ul class="list-style-none font-s margin-top-l">
+                <li><a href="RegularSavingAccounts.html">Regular Savings Accounts</a></li>
+                <li><a href="FamilySavingsScheme.html">Union Family Savings Scheme</a></li>
+                <li><a href="UnionCapitalGainScheme.html">Union Capital Gains Deposit Scheme</a></li>
+                <li><a href="UnionFlexiSavingsDeposit.html">Union Flexi Savings Deposit Scheme</a></li>
+            </ul>
+             <h2 class="font-xl underline">BASIC SAVINGS ACCOUNT SCHEMES</h2>
+            <ul class="list-style-none font-s">
+                <li><a id="bsbdaLink" href="#" class="bgap">Basic Savings Bank Deposit Accounts (BSBDA)</a></li>
+                <li><a id="bsbdsLink" href="#" class="margin-top-l">Basic Saving bank Deposit Accounts Small scheme (BSBDS)</a></li>
+            </ul>
+         </div>
+         
+        <div id="tabs">
+            <ul>
+                <li><a id="bsbdaTab" href="#bsbda">BSBDA</a></li>
+                <li><a id="bsbdsTab" href="#bsbds">BSBDS</a></li>
+            </ul>      
+            <div id="bsbds">
+                  <h2 class="font-l">BASIC SAVING BANK DEPOSIT ACCOUNTS SMALL SCHEME (BSBDS)</h2>
+                  <div class="divider divider-thick"></div>
+                  <h3 class="font-s margin-top-l underline">FEATURES</h3>
+                  <p class="font-s">The salient features of the scheme are as under:</p>
+                  <ul class="margin-top-l font-s">
+                      <li>These are accounts with relaxed KYC, with a minimum document requirement of self attested address proof and photograph.</li>
+                      <li>Total credit in such accounts should not exceed one lakh rupees in a year.</li>
+                      <li>Maximum balance in the account should not exceed Rs.50000/- at any time.</li>
+                      <li>The total of debits by way cash withdrawals and transfers will not exceed Rs.10000/- in a month.</li>
+                      <li>Foreign remittance cannot be credited to Small Accounts without completing normal KYC formalities.</li>
+                      <li>Small accounts are valid for a period of 12 months initially which may be extended by another 12 months if the person submits proof of having applied for an Officially Valid Document.</li>
+                      <li>Small Accounts can only be opened at CBS linked branches of banks or at such branches where it is possible to manually monitor the fulfillments of the conditions</li>                      
+                  </ul>
+                  <p><b>Note</b>: All accounts opened in BSBDA/BSBDS scheme may be provided with overdraft facility up to Rs 5000/-, subject to Policy and discretion of the Bank and credit history of the individual customer / Account holder</p>
+            </div> 
+            <div id="bsbda">
+                  <h2 class="font-l">BASIC SAVINGS BANK DEPOSIT ACCOUNTS (BSBDA)</h2>
+                  <div class="divider divider-thick"></div>
+                  <h3 class="font-s margin-top-l underline">FEATURES</h3>
+                  <p class="font-s">The salient features of the scheme are as under:</p>
+                  <ul class="margin-top-l font-s">
+                      <li>The Basic Savings Bank Deposit Account will be considered as normal banking service.</li>
+                      <li>This account will not have the requirement of any minimum balance.</li>
+                      <li>Facility of ATM card or ATM-cum-Debit Card; RuPay Debit Card will be provided to all the a/c holders.</li>
+                      <li>The services available in the account will include deposit and withdrawal of cash at bank branch as well as ATMs; receipt/credit of money through electronic payment channels or by means of deposit/collection of cheques drawn by Central/State Government agencies and departments;</li>
+                      <li>While there will be no limit on the number of deposits that can be made in a month, account holders will be allowed a maximum of four withdrawals in a month, including ATM withdrawals.</li>
+                      <li>The above facilities will be provided without any charges. Further, no charge will be levied for non-operation/activation of in-operative Basic Saving Bank Deposit Account.</li>                      
+                  </ul>
+                  <p><b>Note</b>: All accounts opened in BSBDA/BSBDS scheme may be provided with overdraft facility up to Rs 5000/-, subject to Policy and discretion of the Bank and credit history of the individual customer / Account holder</p>
+            </div>  
+         </div>
+    </div>        
+</body>
+</html>
