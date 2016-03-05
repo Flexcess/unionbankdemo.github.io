@@ -18,6 +18,10 @@
     height: 505px; 
 }
 
+.deposit{
+    background-image: url(../../images/UBI_recurrent_deposit.jpg);
+}
+
 .salary{
     background-image: url(../../images/UBI_Salary_account.jpg);
 }

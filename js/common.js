@@ -14,7 +14,7 @@
                         'Personal_Accounts': {'Current Accounts': 'personal/RegularCurrentAccount.html',
                                               'Savings Accounts': 'personal/RegularSavingAccounts.html', 
                                               'Salary Accounts': 'personal/UnionSuperSalaryAccount.html', 
-                                              'Recurring Deposit Scheme': 'personal/RecurringDepositScheme.html',
+                                              'Recurring Deposit Scheme': 'personal/OrdinaryCumulativeDeposit.html',
                                               'Fixed Deposit Accounts': 'personal/FDAccounts.html',
                                               'Demat Accounts': 'personal/DematAccounts.html',
                                               'Online Trading Accounts': 'personal/OnlineTradingAccounts.html',

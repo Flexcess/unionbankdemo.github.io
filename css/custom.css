@@ -237,6 +237,14 @@ button.back-btn:hover{
     text-align: center;
 }
 
+.text-underline{
+    text-decoration: underline;
+}
+
+.text-caps{
+    text-transform: uppercase;
+}
+
 .text-right {
     text-align: right;
 }
@@ -267,11 +275,19 @@ button.back-btn:hover{
     vertical-align: bottom;
 }
 
-.border, table.border td {
-    border: 1px solid #c1c1c1;
-    padding-left: 15px;
-    padding-right: 15px;
+td > ul{
+    margin-left:10px;
+    margin-right:10px;    
 }
+
+.border, table.tb-border td{
+    border: 1px solid #c1c1c1;
+}
+
+table.tb-border td{   
+    padding-left: 15px;
+    padding-right: 15px;  
+ }
 
 .border-top{  
     border-top: 10px solid #24A9E1;
