@@ -1,14 +1,17 @@
  $(function(){
             $('.nav-grid-icon .columns').click(function(){
                 var map = {
-                            'Personal': ['Accounts', 'Alternate Channel', 'Cards', 'Govt. Business', 'Insurance & Investment', 'Online Payments', 'Other Service', 'Retail Loans'],
+                            'Personal': ['Accounts', 'Retail Loans', 'Online Payments', 'Digital Banking', 'Cards', 'Insurance & Investment', 'Other Service', 'TVC'],
                             'NRI': ['NRI Deposit', 'NRI Investments', 'NRI Remittances', 'NRI Loans', 'NRI FAQs'],
                             'International': ['Exports', 'Imports', 'Remittances', 'Network', 'Other Services', 'Treasury', 'FAQs'],
-                            'Rural & Agri': ['Short Term Credit', 'Long Term Credit', 'Other Credit', 'Financial Inclusion', 'CSR', 'Useful Information', 'Partners with Govt', 'Minority Welfare'],
+                            'Rural & Agri': ['Short Term Credit', 'Long Term Credit', 'Other Credit', 'CSR', 'Useful Information', 'RRB', 'Minority Welfare'],
                             'Corporate' : ['Deposit Accounts', 'Credit', 'Loan Syndication & Advisory', 'Selected Treasury Products', 'Government Business', 'Other Services', 'Useful Information', 'FAQs'],
-                            'MSME': ['MSME Overview', 'MSME Policy', 'Credit', 'Schemes', 'Channel Finance', 'Special Scheme', 'Other Services', 'MSME Contact Points'],
-                            'Financial Inclusion': ['Model For FI', 'Products for FI', 'Projects Undertaken', 'Schemes Implemented', 'CSR', 'Useful Information'],
-                            'About Us': ['Profile', 'Joint Venture', 'Investor Relations', 'Policies & Codes', 'Training System', 'Careers', 'KYC', 'Risk Management', 'CSR', 'MISC']
+                            'MSME': ['MSME Overview', 'MSME Policy', 'Credit', 'Schemes', 'Channel Finance', 'Special Scheme', 'Other Services', 'MSME Contact Points', 'Mudra', 'TVC'],
+                            'Financial Inclusion': ['Model For FI', 'Products for FI', 'Projects Undertaken', 'Schemes Implemented', 'CSR', 'Useful Information', 'PJMDY', 'PMJJBY', 'PSMBY', 'Bank MITRA'],
+                            'About Us': ['Profile', 'Joint Venture', 'Investor Relations', 'Policies & Codes', 'Training System', 'Careers', 'KYC', 'Risk Management', 'CSR', 'MISC'],
+                            'Govt. Business': ['Departmentalized Ministries Accounts', 'Government Savings Schemes', 'Tax Collection', 'Pension', 'Fund Management Solution'],
+                            'Investor Relations': ['Disclosures to Stock Exchange(s)', 'Shareholders Information', 'Financial Results', 'Annual Reports', 'Half Yearly Communicaions', 
+                                                   'General Meetings', 'Key Managerial Personnel', 'Investor Grievence Mechanism'],
                             },
                     l2_map = {
                         'Personal_Accounts': {'Current Accounts': 'personal/RegularCurrentAccount.html',
@@ -18,7 +21,7 @@
                                               'Fixed Deposit Accounts': 'personal/FDAccounts.html',
                                               'Demat Accounts': 'personal/DematAccounts.html',
                                               'Online Trading Accounts': 'personal/OnlineTradingAccounts.html',
-                                              'Useful Information': 'personal/Info.html'},
+                                              'Useful Information': 'personal/Usefulinfo.html'},
                                                
                          'Personal_Alternate Channel': {'ATMs': '',
                                                         'Internet Banking':'',
@@ -40,12 +43,13 @@
                                                      'Govt. Bonds': '',
                                                      'Departmentalised Ministries Account': ''},
                                                          
-                         'Personal_Insurance & Investment': {'Mutual Fund': '',
-                                                             'Insurance': '',
-                                                             'Gold Coin': '',
-                                                             'Union Demat': '',
-                                                             'Online Trading Account': '',
-                                                             'ASBA Applications': ''},
+                         'Personal_Insurance & Investment': {'Mutual Fund': 'MutualFunds.html',
+                                                             'Life Insurance': 'LifeInsurance.html',
+                                                             'General Insurance': 'NonLifeInsurance.html',
+                                                             'Union Demat': 'DematAccounts.html',
+                                                             'Online Trading Account': 'OnlineTradingAccounts.html',
+                                                             'ASBA Applications': 'ASBA.html',
+                                                             'Tax Saving Deposits': 'personal/PMSBY.html'},
                                                                                    
                          'Personal_Online Payments': {'Union Bill Pay': '',
                                                       'Bill Pay Online': '',
@@ -120,7 +124,7 @@
                         var links = '<ul id="catL2" class="list-style-none margin-left margin-right">';
                         val.forEach(function(val, index){
                             console.log(val);
-                            links += '<li><h3 class="margin-left-s"><span class="inline-block font-l" style="width:85%">' + val + '</span><span class="u-pull-right"><img class="icon" src="images/icons/personal_100.png" alt=""><img class="caret-right margin-left margin-right" src="images/icons/caret_right_100.png" alt=""></span></h3>'
+                            links += '<li class="margin-bottom-none border"><h3 class="margin-left-s"><span class="inline-block font-l" style="width:85%">' + val + '</span><span class="u-pull-right"><img class="icon" src="images/icons/personal_100.png" alt=""><img class="caret-right margin-left margin-right" src="images/icons/caret_right_100.png" alt=""></span></h3>'
                                            +'<p></p>'
                                       +'</li>';
                         });
@@ -138,14 +142,14 @@
                                     for(var catL3 in catL2){
                                         console.log(catL3);
                                         var gapClass = catL3 == Object.keys(catL2)[Object.keys(catL2).length - 1] ? 
-                                                    '' : 'margin-bottom bgap-xl ';
+                                                    '' : 'margin-bottom bgap-xl border-bottom margin-top-l ';
                                         content += '<div class="' + gapClass +'font-xxl"><a href="' + catL2[catL3] + '">' + catL3 + '</a></div>';
                                     }
                                     $(ui.newPanel).append(content);
                                  }
                              }
                         });
-                        $('.back-btn').text('Under ' + parent + ', Go Back').removeClass('hide')
+                        $('.back-btn').text(parent + ' / Back').removeClass('hide')
                     }, 500);
                     
                     $('.back-btn').click(function(){

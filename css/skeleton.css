@@ -316,10 +316,10 @@ ul.list-style-none{
     list-style: none;
 }
 ul.list-vspace-md li{
-    margin-bottom: 0.4rem;
+    margin-bottom: 1.5rem;
 }
 ul.list-vspace-l li{
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
