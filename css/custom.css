@@ -10,6 +10,12 @@ body {
 
 }
 
+#mainBanner{
+    height: 470px;
+    background: url(../images/UBI_Banner.png) no-repeat center center;
+    background-size: cover;
+}
+
 .card{
     background: #fff;
     padding: 10px;
@@ -83,16 +89,34 @@ body{
 
 #footer {
     min-height: 100px;
-    padding-top: 70px;
-    background: #303030;
+    padding-top: 30px;
+    background: #707072;
     color: #E0E0E0;
 }
 
-#footerlinks{
-    padding-left:60px;
-    border-left: 2px solid #FFFFFF;
-    min-height: 320px;
+.radial-shadow{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
 }
+/*==================================================
+ * Drop shadow effect with box-shadow
+ * ===============================================*/
+.radial-shadow:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 40px rgba(0,0,0,0.8);
+    box-shadow: 0 0 40px rgba(0,0,0,0.8);
+    bottom: 0px;
+    width: 80%;
+    height: 50%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    left: 10%;
+    right: 10%;
+}
+
 
 .height-100 {
     height: 100%;
@@ -120,7 +144,25 @@ body{
     border-radius: 10px;
 }
 
-.ui-widget-content .ui-state-default, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{    
+.rotated-icon{
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;    
+    transform: rotatex(90deg); 
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.ui-widget-content .ui-state-default, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, 
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{    
     background-image: none;
 }
 
@@ -132,9 +174,14 @@ body{
     height: 450px!important;
 }
 
-.ui-widget-content a{
-    color: #223A82;
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
+    border: none;
+    outline-width: 0;
 }
+
+/*.ui-widget-content a{
+    color: #223A82;
+}*/
 
 @media (min-width: 480px){
     h3 {
@@ -188,6 +235,10 @@ button.back-btn:hover{
 
 .margin-left-l {
     margin-left: 20px;
+}
+
+.margin-right-s {
+    margin-right: 5px;
 }
 
 .margin-right {
@@ -267,6 +318,12 @@ button.back-btn:hover{
 }
 .align-bottom{
     vertical-align: bottom;
+}
+
+#desktopLink{
+    position: absolute;
+    right: 20px;
+    top: 40%;
 }
 
 td > ul{

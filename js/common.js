@@ -124,7 +124,7 @@
                         var links = '<ul id="catL2" class="list-style-none margin-left margin-right">';
                         val.forEach(function(val, index){
                             console.log(val);
-                            links += '<li class="margin-bottom-none border"><h3 class="margin-left-s"><span class="inline-block font-l" style="width:85%">' + val + '</span><span class="u-pull-right"><img class="icon" src="images/icons/personal_100.png" alt=""><img class="caret-right margin-left margin-right" src="images/icons/caret_right_100.png" alt=""></span></h3>'
+                            links += '<li class="margin-bottom-none border"><h3 class="margin-left-s"><span class="inline-block font-l" style="width:85%">' + val + '</span><span class="u-pull-right"><img class="icon margin-right-s" src="images/icons/personal_100.png" alt=""><img class="caret-right margin-left margin-right" src="images/icons/caret_right_100.png" alt=""></span></h3>'
                                            +'<p></p>'
                                       +'</li>';
                         });
@@ -143,23 +143,27 @@
                                         console.log(catL3);
                                         var gapClass = catL3 == Object.keys(catL2)[Object.keys(catL2).length - 1] ? 
                                                     '' : 'margin-bottom bgap-xl border-bottom margin-top-l ';
-                                        content += '<div class="' + gapClass +'font-xxl"><a href="' + catL2[catL3] + '">' + catL3 + '</a></div>';
+                                        content += '<div class="' + gapClass +'font-xxl"><a class="text-black" href="' + catL2[catL3] + '">' + catL3 + '</a></div>';
                                     }
                                     $(ui.newPanel).append(content);
                                  }
                              }
                         });
                         $('.back-btn').text(parent + ' / Back').removeClass('hide')
-                    }, 500);
-                    
-                    $('.back-btn').click(function(){
-                        var $btn = $(this);
-                        
-                        $('#catL2').animate({ marginLeft: "-1000px", opacity: 0 }, 500, function(){
-                            $(this).remove();
-                            $btn.addClass('hide');
-                            $('.nav-grid-icon').show("slide", { direction: "up" }, 500);
-                        });
-                    });
-            });
+                    }, 500);            
+    });
+    
+    $('.back-btn').click(function(){
+        var $btn = $(this);
+        
+        $('#catL2').animate({ marginLeft: "-1000px", opacity: 0 }, 500, function(){
+            $(this).remove();
+            $btn.addClass('hide');
+            $('.nav-grid-icon').show("slide", { direction: "up" }, 500);
         });
+    });
+    
+    $(document).on('click', '#catL2 h3', function (e) {
+        $(this).find('.caret-right').toggleClass('rotated-icon');
+    }); 
+});
