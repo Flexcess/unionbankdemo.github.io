@@ -530,7 +530,7 @@ ul.list.list-horizontal.spacing-l > li + li{
     font-size: 0.7em;    
 }
 
-.ui-widget{
+.ui-widget, .raleway{
     font-family: 'Raleway', sans-serif;
 }
     
