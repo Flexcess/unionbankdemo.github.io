@@ -206,11 +206,11 @@ button.back-btn:hover{
 }
 
 .margin-top {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .margin-top-l {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .margin-top-xl {
@@ -257,7 +257,7 @@ button.back-btn:hover{
     padding-bottom: 40px;
 }
 
-.leftingap{
+.leftingap, th.leftingap{
     padding-left: 20px; 
 }
 

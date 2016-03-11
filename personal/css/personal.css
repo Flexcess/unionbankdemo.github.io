@@ -75,6 +75,38 @@
     background-image: url(../../images/PMSBY.jpg);    
 }
 
+.ccard{
+    background-image: url(../../images/UBI_credit_card.jpg);    
+}
+
+.usecure{
+    background-image: url(../../images/UBI_usecure.jpg);    
+}
+
+.intl-dcard{
+    background-image: url(../../images/UBI_InternationalDebitCards.jpg);    
+}
+
+.business-dcard{
+    background-image: url(../../images/UBI_BusinessDebitCard.jpg);    
+}
+
+.giftcard{
+    background-image: url(../../images/UBI_GiftCards.jpg);      
+}
+
+.payroll{
+    background-image: url(../../images/UBI_PayrollCards.jpg);
+}
+
+.irctc{
+    background-image: url(../../images/UBI_IRCTC_Prepaid.jpg);    
+}
+
+#footer{
+    font-size: 12px;
+}
+
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)
