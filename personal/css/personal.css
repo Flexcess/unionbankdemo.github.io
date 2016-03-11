@@ -59,6 +59,10 @@
     background-image: url(../../images/UBI_Gold_Coin.jpg);    
 }
 
+.direct-tax{
+    background-image: url(../../images/UBI_direct_tax.jpg);    
+}
+
 .content, #tabs{
     font-size: 20px;
 }
@@ -101,6 +105,14 @@
 
 .irctc{
     background-image: url(../../images/UBI_IRCTC_Prepaid.jpg);    
+}
+
+.pos{
+    background-image: url(../../images/UBI_POS.jpg);
+}
+
+.reward-program{
+    background-image: url(../../images/UBI_RewardDebitCreditCard.jpg);    
 }
 
 #footer{
