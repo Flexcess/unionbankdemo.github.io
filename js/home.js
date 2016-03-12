@@ -134,13 +134,13 @@
                             '<div class="columns six center full">' +
                                 '<div class="image text-center margin-top-l">'+
                                     '<img class="mainIcon" src="images/icons/personal_100.png" alt="">' +    
-                                    '<div data-group="' + key + '" class="bgap-l lh-1">' +  key +'</div>' +
+                                    '<div data-group="' + key + '" class="text-caps bgap-l lh-1">' +  key +'</div>' +
                                 '</div>' +
                             '</div>'
                     :  '<div class="columns six center full">' +
                             '<div class="image text-center margin-top-l">'+
                                 '<img class="mainIcon" src="images/icons/personal_100.png" alt="">' +    
-                                '<div data-group="' + key + '" class="bgap-l  lh-1">' +  key +'</div>' +
+                                '<div data-group="' + key + '" class="text-caps bgap-l  lh-1">' +  key +'</div>' +
                             '</div>' +
                         '</div>'+
                     '</div>' ;
