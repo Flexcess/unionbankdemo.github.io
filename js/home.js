@@ -36,9 +36,9 @@
                 'Govt. Business_Tax Collection': {'Direct Taxes': 'personal/DirectTaxes.html',
                                             'Indirect Taxes': 'personal/IndirectTaxes.html',
                                             'State Tax Collections': 'personal/StateTaxCollections.html',
-                                            'New Pension Scheme 2009': '',
+                                            'New Pension Scheme 2009': 'personal/NewPensionScheme.html',
                                             'Govt. Deposit Scheme': '',
-                                            'Pension': '',
+                                            'Pension': 'personal/CentralCivilPension.html',
                                             'Govt. Bonds': '',
                                             'Departmentalised Ministries Account': ''},
                                                 
