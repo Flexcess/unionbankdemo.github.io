@@ -3,17 +3,11 @@
 <head>
      <meta charset="UTF-8">
     <title>Union Bank Of India, Direct Tax information</title>
-    <link rel="stylesheet" href="../css/jquery-ui.min.css">
     <script src="../js/jquery-2.2.1.min.js"></script>
-    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/common.js"></script>
 	<link rel="stylesheet" href="../css/skeleton.css">
 	<link rel="stylesheet" href="../css/custom.css"> 
-    <link rel="stylesheet" href="css/personal.css">
-    <script>
-       $(function(){
-            $( "#tabs" ).tabs();
-       })
-    </script>
+    <link rel="stylesheet" href="css/personal.css">  
 </head>
 <body>
   <!-- Header -->
@@ -30,15 +24,38 @@
 	<span class="u-cf"></span>
     <div class="content">
         <div class="leftingap rightingap">
-        <ul class="list-style-none font-s margin-top-l text-caps border-bottom">
-            <li><a href="IndirectTaxes.html">Indirect Taxes</a></li>
-            <li><a href="StateTaxCollections.html">State Tax Collections [Sales Tax /VAT /etc]</a></li>            
-            <li><a href="NewPensionScheme.html">New Pension Scheme 2009</a></li>
-            <li><a href="GovtDepositScheme.html">Govt. Deposit Scheme</a></li>
-            <li><a href="Pension.html">Pension</a></li>
-            <li><a href="GovernmentBonds.html">Government Bonds</a></li>
-            <li><a href="DeptMinistriesAccount.html">Departmentalised Ministries Account</a></li>
-        </ul>             
+         <div class="divider divider-thick"></div>              
+            <ul class="list-style-none font-s margin-top-l text-caps">
+                <li><a href="DirectTaxes.html" class="selected">Direct Taxes</a></li> 
+                <li><a href="IndirectTaxes.html">Indirect Taxes</a></li>
+                <li><a href="StateTaxCollections.html">State Tax Collections [Sales Tax /VAT /etc]</a></li>
+                <li>
+                    <div class="nav-group underline  text-navyblue">Govt. Deposit Scheme <img class="caret-right margin-left margin-right" style="vertical-align:baseline" src="../images/icons/caret_right_100.png" alt=""></div>
+                    <ul>
+                        <li><a href="PublicProvidentFund.html">Public Provident Fund</a></li>
+                        <li><a href="SeniorCitizensScheme.html">Senior Citizens Savings scheme</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="nav-group underline  text-navyblue">Pension <img class="caret-right margin-left margin-right" style="vertical-align:baseline" src="../images/icons/caret_right_100.png" alt=""></div>
+                     <ul>
+                        <li><a href="CentralCivilPension.html">Central Civil Pension </a></li>
+                        <li><a href="RailwayPension.html">Railway Pension</a></li>
+                        <li><a href="DefencePension.html">Defence Pension</a></li>
+                        <li><a href="FreedomFightersPension.html">Freedom Fighters Pension</a></li>
+                        <li><a href="StateGovtPension.html">State Govt Pension</a></li>
+                        <li><a href="TelecomPension.html">Telecom Pension</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="nav-group underline  text-navyblue">Government Bonds <img class="caret-right margin-left margin-right" style="vertical-align:baseline" src="../images/icons/caret_right_100.png" alt=""></div>
+                    <ul>
+                        <li><a href="RBITaxableBonds.html">RBI 8% TAXABLE BONDS</a></li>
+                        <li><a href="IINSSC.html">Inflation Indexed National Saving Securities- Cumulative (IINSS-C)</a></li>
+                    </ul>
+                </li>
+                <li><a href="DeptMinistriesAccount.html">Departmentalised Ministries Account</a></li>
+            </ul>             
         <div class="margin-top-l font-s underline">
             <h3 class="">Navigate to:</h3>
             <ul class="list-style-none font-s margin-top-l text-caps list-vspace-l">
