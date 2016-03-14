@@ -2,8 +2,8 @@
      var map = {
                 'Personal': ['Accounts', 'Retail Loans', 'Online Payments', 'Digital Banking', 'Cards', 'Insurance & Investment', 'Other Service', 'TVC'],
                 'NRI': ['NRI Deposit', 'NRI Investments', 'NRI Remittances', 'NRI Loans', 'NRI FAQs'],
-                'International': ['Exports', 'Imports', 'Remittances', 'Network', 'Other Services', 'Treasury', 'FAQs'],
-                'Rural & Agri': ['Short Term Credit', 'Long Term Credit', 'Other Credit', 'CSR', 'Useful Information', 'RRB', 'Minority Welfare'],
+                'International': ['Exports', 'Remittances', 'Network', 'Other Services', 'Treasury', 'FAQs'],
+                'Rural & Agri': ['Short Term Credit', 'Long Term Credit', 'Other Credit', 'CSR', 'RRB', 'Minority Welfare'],
                 'Corporate' : ['Deposit Accounts', 'Credit', 'Loan Syndication & Advisory', 'Selected Treasury Products', 'Government Business', 'Other Services', 'Useful Information', 'FAQs'],
                 'MSME': ['MSME Overview', 'MSME Policy', 'Credit', 'Schemes', 'Channel Finance', 'Special Scheme', 'Other Services', 'MSME Contact Points', 'Mudra', 'TVC'],
                 'Financial Inclusion': ['Model For FI', 'Products for FI', 'Schemes Implemented', 'CSR', 'Useful Information'],
@@ -111,7 +111,7 @@
                 'International_Remittances': {'E-REMIT': 'personal/'},                    
                 'International_Network': {'Authorised Dealing Branches': 'pdf/IBD-Network-authorised dealing branches.pdf',
                                         'Correspondent Banks': 'personal/NOSTROAccount.html',
-                                        'Overseas Branches': 'personal/'},
+                                        'Overseas Branches': 'personal/IBD_Network_HongKong.html'},
                 'International_Other Services': {'Foreign Currency Loans': 'personal/',
                                                 'Exchange Rate Feed Over Reuters': 'personal/ExchRateOthers.html',
                                                 'Online DGFT Payment': 'personal/OnlineDGFTPayment.html',
@@ -229,6 +229,7 @@
     });
     
     $(document).on('click', '#catL2 h3', function (e) {
-        $(this).find('.caret-right').toggleClass('rotated-icon');
+        $('.rotated-icon').removeClass('rotated-icon');
+        $(this).find('.caret-right').addClass('rotated-icon');
     }); 
 });
