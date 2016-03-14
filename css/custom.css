@@ -447,3 +447,10 @@ img.caret-right{
     height: 30px;
     vertical-align: middle;    
 }
+.nav-grid-icon .columns:focus, .nav-grid-icon .columns:active{
+    color: #BE1E2D;
+    border-right-color: #BE1E2D;
+    border-bottom-color: #BE1E2D;
+    border-top-color: #BE1E2D;
+    border-left-color: #BE1E2D;
+}
