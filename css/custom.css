@@ -27,11 +27,29 @@ body {
     color: #0F4C9C;
 }
 
+.ui-widget-content li a{
+    color: #333;
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited{
+        color: #212121!important;
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+    color: #555!important;
+}
+
 #footer {
     min-height: 100px;
     padding-top: 30px;
     background: #707072;
     color: #E0E0E0;
+}
+#footer h1{
+    margin-bottom: 0
+}
+#footer a{
+    color: #E0E0E0!important;    
 }
 
 .radial-shadow{
@@ -106,12 +124,20 @@ body {
     background-image: none;
 }
 
+.ui-widget-header {
+    background: #ccc url("../images/ui-bg_highlight-soft_75_cccccc_1x100.png");    
+}
+
 .ui-tabs .ui-tabs-panel{
     line-height: 1.4;
 }
 
 .ui-accordion .ui-accordion-content{
     height: 450px!important;
+}
+
+.ui-accordion .ui-accordion-content .text-black{
+    color: #333!important;
 }
 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
@@ -242,6 +268,10 @@ button.back-btn:hover{
     color: #FFFFFF;
 }
 
+.text-red{
+    color: #BE1E2D;
+}
+
 .align-top {
     vertical-align: top;
 }
@@ -256,6 +286,7 @@ button.back-btn:hover{
     position: absolute;
     right: 20px;
     top: 40%;
+    color: #333!important;
 }
 
 td > ul{
@@ -350,12 +381,12 @@ table.tb-border td{
 
 .divider{
     height: 1px;
-    background-color: #42a5f5;
+    background-color: #0F4C9C;
     margin: 10px 0;
 }
 .divider.divider-thick{
     height: 2px;
-    background-color: #42a5f5;
+    background-color: #0F4C9C;
     margin: 10px 0;
 }
 .underline{

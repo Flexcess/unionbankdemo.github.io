@@ -163,7 +163,7 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-    color: #0F4C9C; 
+    color: #0F4C9C!important; 
     text-decoration: none;
 }
 a:hover {
