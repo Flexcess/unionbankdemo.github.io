@@ -1,4 +1,6 @@
  $(function(){
+  $('[src="images/icons/menu-search.png"], [src="images/icons/menu-search.png"] + span').hide();
+
     $('#hamburgerOpen').click(function(){
       $('#sidemenu').animate({ right: "0" }, 500)
    });

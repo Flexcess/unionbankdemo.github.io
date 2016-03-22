@@ -1,4 +1,7 @@
 $(function(){
+  debugger;
+  $('[src="../images/icons/menu-search.png"], [src="../images/icons/menu-search.png"] + span').hide();  
+
    $('.nav-group').click(function() {
        var $header = $(this).next('ul'),
            $caret = $(this).find('img'); 
