@@ -18,26 +18,63 @@
 			<span class="inline-block" style="height: 90px;"></span>
 			<img src="images/icons/menu-search.png" alt="search" class="align-middle margin-right">
 			<span class="inline-block margin-left margin-right align-middle" style="border:1px solid #0F4C9C;height: 45px;"></span>
-			<img class="margin-left-l align-middle" src="images/icons/hamburger.png" alt="hamburger-menu">
+			<img class="margin-left-l align-middle" src="images/icons/hamburger.png" alt="hamburger-menu" id="hamburgerOpen">
 		</span>
 	</div>
+    <div id="sidemenu" class="relative">
+        <div class="text-right bgap"><img class="margin-left-l align-middle" id="hamburgerClose" src="images/icons/hamburger-close.png" alt="hamburger-menu"></div>
+        <div id="holder" class="bgap margin-top-l">
+               <ul class="list-style-none text-right text-gray">
+                    <li class="text-caps"><a target="_blank"class="text-gray" href="https://www.unionbankonline.co.in/corp/BANKAWAY?Action.RetUser.Init.001=Y&AppSignonBankId=026&AppType=corporate">internet banking</a></li>
+                    <li class="text-caps"><a class="text-gray" target="_blank" href="personal/Careers.html">careers</a></li>
+                    <li class="text-caps"><a class="text-gray" target="_blank" href="personal/UBIOverview.html">profile</a></li>
+                    <li class="text-caps"><a class="text-gray" target="_blank" href="personal/PressReleases.html">press releases</a></li>
+                    <li class="text-caps"><a class="text-gray" target="_blank" href="personal/FarmersClubs.html">csr</a></li>
+                    <li class="text-caps"><a class="text-gray" target="_blank" href="personal/OnlineTaxPayment.html">online tax payment</a></li>
+                    <li class="text-caps"><a class="text-gray" target="_blank" href="personal/HomeLoan.html">retail loans</a></li>
+                    <li class="text-caps"><a class="text-gray" target="_blank" href="personal/UnionMiles.html">vehicle loans</a></li>
+                    <li class="text-caps"><a class="text-gray" target="_blank" href="personal/UnionEducation.html">education loans</a></li>
+                    <li class="text-caps"><a class="text-gray" target="_blank" href="personal/UnionMedicalLoan.html">medical loans</a></li>
+                    <li class="text-caps"><a class="text-gray" target="_blank" href="personal/Conversations.html">May we help you</a></li>
+                </ul>
+        </div>
+        <img id="bottomLogo" class="absolute absolute-center" src="images/icons/ubi-ham-logo.png" alt="UBI">        
+    </div>
 	<!-- Header End -->
 	<span class="u-cf"></span>
 	<div class="content font-l">
-		<div id="mainBanner" class="radial-shadow">			
+		<div id="mainBanner">			
 		</div>
 		<div class="bg-pale-light center">
 			<ul class="list list-horizontal spacing-l bgap-0">
 				<li class="margin-bottom-none">
 					<ul class="list-style-none bgap-0 margin-bottom-none">
-						<li class="margin-bottom-none"><img src="images/icons/atm.png" alt="ATM Locator"></li>
-						<li class="margin-bottom-none"><span class="font-xl">ATM Locator</span></li>
+						<li class="margin-bottom-none"><a href="http://app.mapmyindia.com/UBI/index.htm" target="_blank"><img src="images/icons/atm.png" alt="ATM Locator"></a></li>
+						<li class="margin-bottom-none"><span class="font-xl"><a class="text-black" target="_blank" style="color: #333!important" href="http://app.mapmyindia.com/UBI/index.htm">ATM Locator</a></span></li>
 					</ul>
 				</li>
 				<li class="margin-bottom-none">
 					<ul class="list-style-none bgap-0">
-						<li><img src="images/icons/contact.png" alt="Contact Us"></li>
-						<li><span class="font-xl">Contact Us</span></li>
+						<li><img src="images/icons/contact.png" class="ct-tooltip" alt="Contact Us"></li>
+						<li><div><span class="font-xl ct-tooltip">Contact Us</span></div>
+                            <div id="contactTooltip" class="absolute hide">
+                                <ul class="list-style-none vlist-space-l text-caps text-white">
+                                     <li>
+                                        <h3 class="font-xxl margin-bottom-none">all india toll free number</h3>
+                                        <div class="margin-top font-xxl">1800 22 22 24</div>
+                                        <div class="bgap underline font-xxl">2800 208 2244</div>
+                                     </li>
+                                     <li class="margin-top-l">
+                                        <h3 class="margin-top margin-bottom-none font-xxl">all india toll free number for pmjdy scheme</h3>
+                                        <div class="bgap underline margin-top font-xxl">1800 22 22 23</div>
+                                     </li>
+                                     <li class="margin-top-l">
+                                        <h3 class="margin-top margin-bottom-none font-xxl">dedicated number for nri</h3>
+                                        <div class="margin-top font-xxl">+918025302510</div>
+                                     </li>
+                                 </ul>         
+                            </div>
+                        </li>
 					</ul>
 				</li>
 			</ul>
@@ -46,14 +83,12 @@
 		<div class="font-xl nav-grid-icon bgap" id="navGrid">           
 		</div>
 	</div>
-    <div class="center bg-pale-light margin-top-l relative" style="height:150px;">
-        <div><span class="inline-block align-middle" style="height:150px"></span><img class="align-middle" src="images/icons/social.png" alt=""><a id="desktopLink" href="http://www.unionbankofindia.co.in" target="blank" class="text-black">Go to the desktop site</a></div>
-    </div>
+    
     <div id="footer">
         <div class="container">
             <ul class="list-style-none center bgap margin-bottom-none">
-                <li><h1 class="font-xxl">Union Bank of India &#169; 2016</h1></li>
-                <li><div class="font-xl"><a href="#" class="text-white">Terms & Conditions</a> | <a href="#" class="text-white">Privacy Policy</a></div></li>
+                <li><h1 class="font-xxl"><div class="text-left inline-block font-s" style="width: 30%">Go to desktop site</div><div style="width: 70%" class="text-right inline-block">Union Bank of India &#169; 2016</div></h1></li>
+                <li><div class="font-l text-right"><a href="#" class="text-white">Terms & Conditions</a> | <a href="#" class="text-white">Privacy Policy</a></div></li>
             </ul>
         </div>
     </div>

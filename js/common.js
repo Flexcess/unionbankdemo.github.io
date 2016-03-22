@@ -12,4 +12,12 @@ $(function(){
         }
    });
    $('.nav-group + ul').hide(); 
+
+   $('#hamburgerOpen').click(function(){
+      $('#sidemenu').animate({ right: "0" }, 500)
+   })
+
+    $('#hamburgerClose').click(function(){
+      $('#sidemenu').animate({ right: "-1000px" }, 500)
+   })
 });

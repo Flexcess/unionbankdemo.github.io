@@ -1,16 +1,28 @@
  $(function(){
+    $('#hamburgerOpen').click(function(){
+      $('#sidemenu').animate({ right: "0" }, 500)
+   });
+
+    $('#hamburgerClose').click(function(){
+      $('#sidemenu').animate({ right: "-1000px" }, 500)
+   });
+
+   $('.ct-tooltip').click(function(){
+    $('#contactTooltip').toggleClass('hide');
+   }); 
+
      var map = {
-                'Personal': ['Accounts', 'Retail Loans', 'Online Payments', 'Digital Banking', 'Cards', 'Insurance & Investment', 'Other Service', 'TVC'],
+                'Personal': ['Accounts', 'Retail Loans', 'Online Payments', 'Digital Banking', 'Cards', 'Insurance & Investment', 'Other Service'],
                 'NRI': ['NRI Deposit', 'NRI Investments', 'NRI Remittances', 'NRI Loans', 'NRI FAQs'],
-                'International': ['Exports', 'Remittances', 'Network', 'Other Services', 'Treasury', 'FAQs'],
+                'International': ['Exports', 'Remittances', 'Network', 'Other Services', 'Treasury', 'International FAQs'],
                 'Rural & Agri': ['Short Term Credit', 'Long Term Credit', 'Other Credit', 'Financial Inclusion', 'CSR', 'Partners With Govt', 'Minority Welfare'],
-                'Corporate' : ['Deposit Accounts', 'Credit', 'Loan Syndication & Advisory', 'Selected Treasury Products', 'Government Business', 'Other Services', 'Useful Information', 'FAQs'],
-                'MSME': ['MSME Overview', 'MSME Policy', 'Credit', 'Schemes', 'Channel Finance', 'Special Scheme', 'Other Services', 'MSME Contact Points', 'Mudra', 'TVC'],
+                'Corporate' : ['Deposit Accounts', 'Credit', 'Loan Syndication & Advisory', 'Selected Treasury Products', 'Government Business', 'Other Services', 'FAQs'],
+                'MSME': ['MSME Overview', 'MSME Policy', 'Credit', 'Schemes', 'Channel Finance', 'Other Services', 'MSME Contact Points'],
                 'Financial Inclusion': ['Model For FI', 'Products for FI', 'Schemes Implemented', 'CSR', 'Useful Information'],
                 'About Us': ['Profile', 'Joint Venture', 'Investor Relations', 'Policies & Codes', 'Training System', 'Careers', 'KYC', 'Risk Management', 'CSR', 'MISC'],
-                'Govt. Business': ['Departmentalized Ministries Accounts', 'Government Savings Schemes', 'Tax Collection', 'Pension', 'Fund Management Solution'],
-                'Investor Relations': ['Disclosures to Stock Exchange(s)', 'Shareholders Information', 'Financial Results', 'Annual Reports', 'Half Yearly Communicaions', 
-                                        'General Meetings', 'Key Managerial Personnel', 'Investor Grievence Mechanism'],
+                'Govt. Business': ['Departmentalized Ministries Accounts', 'Government Savings Schemes', 'Tax Collection', 'Pension'],
+                /*'Investor Relations': ['Disclosures to Stock Exchange(s)', 'Shareholders Information', 'Financial Results', 'Annual Reports', 'Half Yearly Communicaions', 
+                                        'General Meetings', 'Key Managerial Personnel', 'Investor Grievence Mechanism'],*/
                 },
         l2_map = {
             'Personal_Accounts': {'Current Accounts': 'personal/RegularCurrentAccount.html',
@@ -58,38 +70,33 @@
                                         'Loans for Senior Citizens': 'personal/UnionReverseMortgage.html',
                                         'Personal Loan': 'personal/UnionPersonal.html',
                                         'Loans for Medical Practitioners': 'personal/UnionMedicalLoan.html',
-                                        'Loans For Pensioners': 'personal/',
-                                        'Loans For Salary A/C Holders': 'personal/',
+                                        'Loans For Pensioners': 'personal/PensionersShortTermLoans.html',
                                         'Tools': 'personal/EMICalculator.html'},
-                'Personal_Digital Banking': {'Digi Purse': 'personal/',
-                                            'Branch Imps': 'personal/',
-                                            'Mobile Passbook': 'personal/',
+                'Personal_Digital Banking': {
                                             'ATMs': 'personal/ATM.html',
-                                            'Talking ATMs': 'personal/',
-                                            'Remittance @ATMs': 'personal/',
                                             'Internet Banking': 'personal/InternetBanking.html',
                                             'Mobile Banking': 'personal/MobileBankingOverview.html',
                                             'SMS Banking': 'personal/SMSBanking.html',
-                                            'KISAN ATM': 'personal/KisanATM.html',
-                                            'Self ATM PIN Generation Through IVR': 'personal/' },
-                'NRI_NRI Deposit': {'Feature of NRI Deposits': 'personal/',
-                                    'Savings Account': 'personal/',
-                                    'Current Account': 'personal/',
-                                    'Fixed Deposit[Rupees]': 'personal/',
-                                    'Fixed Deposit[Foreign Currency]': 'personal/'},                                               
-                'NRI_NRI Investments': {'Acquisition of Properties': 'personal/',
-                                    'Portfolio Investment': 'personal/',
-                                    'Non Resident Ordinary Account (NRO)': 'personal/',
-                                    'Gold Coins': 'personal/'},
-                'NRI_NRI Remittances': {'Union E-REMIT': 'personal/',
-                                    'Correspondent Banks': 'personal/',
-                                    'Tie Up with Exchange Houses': 'personal/',
-                                    'Union Bill Pay': 'personal/',
-                                    'Tax Payment': 'personal/',
-                                    'Union Bullet[RTGS]': 'personal/'},
-                'NRI_NRI Loans': {'Home Loans': 'personal/',
-                                    'Foreign Currency Loan': 'personal/',
-                                    'NRI FAQs': 'personal/'},
+                                            'KISAN ATM': 'personal/KisanATM.html'},
+                'NRI_NRI Deposit': {'Feature of NRI Deposits': 'personal/NREAccount.html',
+                                    'Savings Account': 'personal/NRESavingsAccount.html',
+                                    'Current Account': 'personal/NRECurrentAccount.html',
+                                    'Fixed Deposit[Rupees]': 'personal/NREFD.html',
+                                    'Fixed Deposit[Foreign Currency]': 'personal/ForeignCurrency.html'},                                               
+                'NRI_NRI Investments': {'Acquisition of Properties': 'personal/PropertyAcquisition.html',
+                                    'Portfolio Investment': 'personal/PortfolioInvestment.html',
+                                    'Non Resident Ordinary Account (NRO)': 'personal/NROAccount.html',
+                                    'Gold Coins': 'personal/GoldCoins.html'},
+                'NRI_NRI Remittances': {'Union E-REMIT': 'personal/E-REMIT.html',
+                                    'Correspondent Banks': 'personal/NOSTROAccount.html',
+                                    'Tie Up with Exchange Houses': 'personal/TieUp.html',
+                                    'Union Bill Pay': 'personal/UnionBillPayDesk.html',
+                                    'Tax Payment': 'personal/OnlineTaxPayment.html',
+                                    'Union Bullet[RTGS]': 'personal/RTGS.html'},
+                'NRI_NRI Loans': {'Home Loans': 'personal/HomeLoan.html',
+                                    'Foreign Currency Loan': 'personal/ForeignCurrencyLoans.html',
+                                    },
+                'NRI_NRI FAQs' : {'FAQ' : 'personal/NRIFAQ.html',},
                 'International_Exports': {'Preshipment Finance': 'personal/PackingCreditInRupees.html',
                                             'Postshipment Finance': 'personal/Postshipment.html',
                                             'Non-Fund Based Finance': 'personal/NonFundBasedFinance.html',
@@ -106,22 +113,34 @@
                 'International_Treasury': {'State of Art': 'personal/TreasuryStateOfTheArt.html',
                                             'Products & Services': 'personal/ProductsServicesOptions.html',
                                             'Gold': 'personal/UnionGold.html'},
-                                            
+                   'International_International FAQs' : {'FAQ' : 'personal/NRIFAQ.html',},                          
                  'Financial Inclusion_Model For FI' : {'Introduction' : 'personal/FinancialInclusion.html'},
                  'Financial Inclusion_Products For FI' : {'Products for FI': 'personal/NoFrillsAccount.html'},
                  'Financial Inclusion_Schemes Implemented' : {'Union Adarsh Gram': 'personal/UnionAdarshGram.html',
-                                                              'Financial Literacy (FLCC)': 'FLCC.html' },
+                                                              'Financial Literacy (FLCC)': 'personal/FLCC.html' },
+                 'Financial Inclusion_Projects Undertaken' : {'NDDB' : 'personal/DairyUnderNDDB.html',
+                                                              'NREGP & SSP Employment' : 'NREGP_SSP.html' },
                  'Financial Inclusion_CSR' : {'Village Knowledge Center': 'personal/VKC.html',
                                               'VKC Portal': 'personal/VKCPortal.html'  },
                  'Financial Inclusion_Useful Information' : {'Useful Information': '/pdf/RABD-Useful info-Villages with 2000 plus Population.pdf'},  
+                 'Govt. Business_Departmentalized Ministries Accounts' : {'DMA Overview' : 'personal/DeptMinistriesAccount.html'},
+                 'Govt. Business_Government Savings Schemes' : {'PPF' : 'personal/PublicProvidentFund.html',
+                                                                 'Senior Citizens Savings scheme' : 'personal/SeniorCitizensScheme.html', 
+                                                                },
+                 'Govt. Business_Pension' : {'Central Civil Pension' : 'personal/CentralCivilPension.html',
+                                             'Railway Pension' : 'personal/RailwayPension.html', 
+                                             'Defence Pension' : 'personal/DefencePension.html',
+                                             'State Govt. Pension' : 'personal/StateGovtPension.html',
+                                             'Telecom Pension' : 'personal/TelecomPension.html',
+                                            },                                               
                  'Govt. Business_Tax Collection': {'Direct Taxes': 'personal/DirectTaxes.html',
                                             'Indirect Taxes': 'personal/IndirectTaxes.html',
                                             'State Tax Collections': 'personal/StateTaxCollections.html',
                                             'New Pension Scheme 2009': 'personal/NewPensionScheme.html',
-                                            'Govt. Deposit Scheme': 'personal/',
+                                            'Govt. Deposit Scheme': 'personal/PublicProvidentFund.html',
                                             'Pension': 'personal/CentralCivilPension.html',
-                                            'Govt. Bonds': 'personal/',
-                                            'Departmentalised Ministries Account': 'personal/'},
+                                            'Govt. Bonds': 'personal/RBITaxableBonds.html',
+                                            'Departmentalised Ministries Account': 'personal/DeptMinistriesAccount.html'},
                  'MSME_MSME Overview' : { 'MSME Definition' : 'personal/MSMEDefinition.html',
                                           'Overall Scenario' : 'personal/MSMEScenario.html' },
                  'MSME_MSME Policy' : { 'MSME Definition' : 'personal/MSMEDefinition.html',
@@ -147,15 +166,38 @@
                                             'Point Of Sales Terminals' : 'personal/POSTerminal.html'},   
                   'MSME_Contact Points' : {'Business Banking Branches' : 'MSMEBusinessBankingBranches.html',
                                             'Saral Centres' : 'MSMESaralCentres.html'},
-                  'Corporate' : {'Deposit Accounts' : 'personal/RegularCurrentAccount.html',
-                                 'Credit' : 'personal/TradeFinance.html', 
-                                 'Loan Syndication & Advisory' : 'personal/DebtRestructuring.html', 
-                                 'Selected Treasury Products' : 'personal/SelectedTreasuryProducts.html', 
-                                 'Government Business' : 'personal/DirectTaxes.html', 
-                                 'Government Deposit Schemes' : 'personal/PublicProvidentFund.html',
-                                 'Other Services' : 'personal/MSMECashManagement.html', 
-                                 'Useful Information' : 'personal/EconomicAnalysis.html', 
-                                 'FAQs' : 'personal/CorporateFAQ.html'},  
+                  'Corporate_Deposit Accounts' : { 'Current Accounts' : 'personal/RegularCurrentAccount.html',
+                                                   'Fixed Deposit' : 'personal/FixedDepositReceipt.html',
+                                                    },
+                   'Corporate_Credit' : { 'Trade Finance' : 'personal/TradeFinance.html',
+                                          'Working Capital' : 'personal/WorkingCapital.html',
+                                          'Term Loan' : 'personal/TermLoan.html',
+                                          'Line Of Credit' : 'personal/LineOfCredit.html',
+                                          'Corporate Loan' : 'personal/CorporateLoan.html',
+                                          'Infrastructure Finance' : 'personal/InfraFinance.html',
+                                          'Channel Finance' : 'personal/ChannelFinance.html',
+                                                    }, 
+                    'Corporate_Loan Syndication & Advisory' : { 'Debt Restructuring' : 'personal/DebtRestructuring.html',
+                                                                'Loan Syndication' : 'personal/LoanSyndication.html',
+                                                                'Structured Finance' : 'personal/StructuredFinance.html',
+                                                                'Mergers & Acquisitions' : 'personal/MNA.html',
+                                                                'Private Equity' : 'personal/PrivateEquity.html',
+                                                    }, 
+                     'Corporate_Selected Treasury Products' : { 'Forex' : 'personal/ForeignCurrencyLoans.html',
+                                                                'Derivatives' : 'personal/ForwardContract.html',
+                                                    },  
+                      'Corporate_Other Services' : { 'ECGC' : 'personal/ECGCCover.html',
+                                                      'Cash Management Services' : 'MSMECashManagement.html',
+                                                    },
+                      'Corporate_Government Business': {'Direct Taxes': 'personal/DirectTaxes.html',
+                                            'Indirect Taxes': 'personal/IndirectTaxes.html',
+                                            'State Tax Collections': 'personal/StateTaxCollections.html',
+                                            'New Pension Scheme 2009': 'personal/NewPensionScheme.html',
+                                            'Govt. Deposit Scheme': 'personal/PublicProvidentFund.html',
+                                            'Pension': 'personal/CentralCivilPension.html',
+                                            'Govt. Bonds': 'personal/RBITaxableBonds.html',
+                                            'Departmentalised Ministries Account': 'personal/DeptMinistriesAccount.html'},                                                                                                                           
+                      'Corporate_FAQs'  : {'Corporate FAQs' : 'personal/CorporateFAQ.html'},                                                             
                   'Rural & Agri_Short Term Credit' : {'Crop Loan' : 'personal/CropLoan.html', 
                                                       'Union Green Card' : 'personal/UnionGreenCard.html',
                                                       'Union Gold Loan' : 'personal/UnionGoldLoan.html',     
@@ -192,22 +234,68 @@
                   'Rural & Agri_Minority Welfare'  : {'PMs 15 Point Program' : 'personal/PM15PTPGM.html',
                                                       'Three Year Road Map' : 'ThreeYrRoadMap.html',
                                                       'Implementation Of Sachar Committee Norms' : 'personal/SacharCommitteeNormsImplementation.html'},                                                                                             
-        },
+                   'About Us_Profile'   : {'Union Bank of India - Overview' : 'personal/UBIOverview.html',
+                                           'Board of Directors': 'personal/DirectorsList.html',
+                                           'Organizational Chart' : 'personal/OrgChart.html',
+                                           'Awards & Commendations' : 'personal/Awards.html',                                           
+                                         },
+                   'About Us_Joint Venture'   : {'Star Union Dai-ichi Life Insurance' : 'personal/StarUnionDaiIchi.html',
+                                                 'Union KBC Mutual Fund': 'personal/UnionKBC.html',                                         
+                                               },  
+                   'About Us_Policies & Codes'   : {'Policies & Code of Coduct': 'personal/Policies_Codes.html',
+                                                     }, 
+                    'About Us_Investor Relations'   : {'Shareholder\'s Information': 'personal/ShareholderAddressChange.html',
+                                                       'Shareholding Pattern': 'personal/ShareholdingPatternOverview.html',
+                                                       'Annual Reports' : 'personal/AnnualReports.html',                                        
+                                                    'Press Releases' : 'personal/PressReleases.html', 
+                                                     'ChiefVigilanceOfficer'  : 'personal/ChiefVigilanceOfficer.html',
+                                                  }, 
+                   'About Us_Training System'   : {'Overview': 'personal/TrainingSystem.html',
+                                                    'College' : 'personal/UBICollege.html'},                 
+                   'About Us_Careers'   : {'Overview': 'personal/Careers.html', },
+                   'About Us_KYC'   : {'Overview': 'personal/KYC.html', },   
+                   'About Us_Risk Management'   : {'Introduction': 'personal/RiskManagement.html',
+                                                   'Credit Risk': 'personal/CreditRisk.html',
+                                                   'Operational Risk': 'personal/OperationalRisk.html',
+                                                   'Market Risk' : 'personal/MarketRisk.html',
+                                                   'BaseL Guidelines' : 'personal/BaseLGuidelinesImplementation.html',
+                                                    },                                
+                    'About Us_CSR'   : {'Farmer\'s Clubs' : 'personal/FarmersClubs.html', 
+                                        'Union Mitr' : 'personal/UnionMitr.html',
+                                        'Village Knowledge Centre' : 'personal/VKC.html',
+                                        'Union Adarsh Gram' : 'personal/UnionAdarshGram.html',                                          
+                                        },  
+                     'About Us_MISC'  : {'May We Help You' : 'personal/Conversations.html',
+                                          'Testimonial' : 'personal/Testimonials.html',
+                                          'About this Website' : 'personal/AboutWebsite.html'}                                                  
+        },  
         count = 0,
         catStr = '';
-                        
+        var images = {
+                        'Personal' : 'personal.png',
+                        'NRI' : 'nri.png',
+                        'International' : 'int.png',
+                        'Rural & Agri' : 'rural.png', 
+                        'Corporate' : 'corp.png',
+                        'MSME' : 'msme.png',
+                        'Financial Inclusion' : 'fin-incl.png',
+                        'About Us' : 'about-us.png',
+                        'Govt. Business' : 'gov.png',
+                        'Investor Relations' : 'investor.png',
+                        };
+
         for(var key in map){
             catStr += (count % 2 == 0) 
                         ? '<div class="row">'+                                   
                             '<div class="columns six center full">' +
                                 '<div class="image text-center margin-top-l">'+
-                                    '<img class="mainIcon" src="images/icons/personal_100.png" alt="">' +    
+                                    '<img class="mainIcon" src="images/icons/grey/' + images[key] + '" alt="">' +    
                                     '<div data-group="' + key + '" class="text-caps bgap-l lh-1">' +  key +'</div>' +
                                 '</div>' +
                             '</div>'
                     :  '<div class="columns six center full">' +
                             '<div class="image text-center margin-top-l">'+
-                                '<img class="mainIcon" src="images/icons/personal_100.png" alt="">' +    
+                                '<img class="mainIcon" src="images/icons/grey/' + images[key] + '" alt="">' +    
                                 '<div data-group="' + key + '" class="text-caps bgap-l  lh-1">' +  key +'</div>' +
                             '</div>' +
                         '</div>'+
@@ -220,10 +308,12 @@
             var parent = $(this).find('[data-group]').data('group'),
                 val = map[parent],
                 catL2 = {};
+
+                $(this).find('.mainIcon').attr('src', 'images/icons/red/' + images[parent])
                                     
                 $('.nav-grid-icon').hide("slide", { direction: "up" }, 500);
                 setTimeout(function(){
-                    var links = '<ul id="catL2" class="list-style-none margin-left margin-right">';
+                    var links = '<ul id="catL2" class="list-style-none margin-left margin-right margin-bottom">';                    
                     val.forEach(function(value, index){
                         console.log(val);
                         links += '<li class="margin-bottom-none border">'+
@@ -263,6 +353,14 @@
         $('#catL2').animate({ marginLeft: "-1000px", opacity: 0 }, 500, function(){
             $(this).remove();
             $btn.addClass('hide');
+
+            $('img[src*=red]').each(function(val, index){
+              console.log($(this).attr('src'));
+              var src = $(this).attr('src').replace('red','grey');
+              console.log(src);
+              $(this).attr('src', src);
+            });
+
             $('.nav-grid-icon').show("slide", { direction: "up" }, 500);
         });
     });
