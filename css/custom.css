@@ -11,9 +11,13 @@ body {
 }
 
 #mainBanner{
-    height: 470px;
+    height: 455px;
     background: url(../images/UBI_Banner.png) no-repeat center center;
     background-size: cover;
+}
+
+#footer li:first-child{
+  margin-bottom:0;
 }
 
 .card{

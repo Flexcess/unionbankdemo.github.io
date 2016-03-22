@@ -320,7 +320,7 @@
                         console.log(val);
                         links += '<li class="margin-bottom-none border">'+
                                     '<h3 class="margin-left-s"><span class="inline-block" style="width:85%">' + value + '</span><span class="u-pull-right">'+
-                                    '<img class="icon margin-right-s align-middle" src="images/icons/personal_100.png" alt=""><img class="caret-right margin-left margin-right align-middle" src="images/icons/caret_right_100.png" alt=""></span></h3>'
+                                    '<img class="icon margin-right-s align-middle" src="images/icons/grey/' + images[parent] + '" alt=""><img class="caret-right margin-left margin-right align-middle" src="images/icons/caret_right_100.png" alt=""></span></h3>'
                                     +'<p></p>'                                        
                                 +'</li>';
                     });
