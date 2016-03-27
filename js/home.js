@@ -1,5 +1,15 @@
  $(function(){
-  $('[src="images/icons/menu-search.png"], [src="images/icons/menu-search.png"] + span').hide();
+  // $('[src="images/icons/menu-search.png"], [src="images/icons/menu-search.png"] + span').hide();
+
+  $('[src="images/icons/menu-search.png"]').click(function(){
+    if(!$('#searchFor').length){
+      $('#topNav').append('<div style="clear: both;float: right; margin-top:-27px;" id="searchFor">'+
+                              '<input placeholder="search here" style="font-size: 30px;margin-bottom: 0;border-top:0"/>'+
+                           '</div>');
+        $('#searchFor input').focus();        
+    }else
+        $('#searchFor').remove();
+  });
 
     $('#hamburgerOpen').click(function(){
       $('#sidemenu').animate({ right: "0" }, 500)

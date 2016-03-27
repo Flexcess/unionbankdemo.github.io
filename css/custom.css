@@ -162,6 +162,7 @@ table td{
     top: 895px;     
     box-shadow: 0 -15px 10px rgba(0,0,0,0.2);   
     padding: 40px;
+    z-index: 1000;      
 }
 
 #contactTooltip:before {
