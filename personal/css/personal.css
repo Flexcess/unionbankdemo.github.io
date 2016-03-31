@@ -14,37 +14,3 @@ li a.selected, li a.selected:hover{
 #footer li:last-child{
     font-size: 8px;
 }
-
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 1)  {     
-    .font-s {
-        font-size: 1.6em;
-    }
-    #footer{    
-        font-size: 24px;
-    }
-    #footer li>h1>div:first-child{
-        font-size: 22px;
-    }
-
-    #footer li:last-child{
-        font-size: 20px;
-    }
-}
-
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) { 
-    .font-s {
-        font-size: 1em;
-    }
-
-    #footer{
-        font-size: 24px;
-    }
-    #footer li:last-child{
-        font-size: 8px;
-    }
-}
