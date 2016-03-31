@@ -231,7 +231,16 @@ table td{
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 1)  {     
+and (-webkit-min-device-pixel-ratio: 1)  {  
+    .ui-accordion .ui-accordion-content{
+        font-size: 20px;
+    }
+    .ui-accordion .ui-accordion-header{
+        font-size: 1.2em!important;
+    }
+    .content{
+        font-size: 1em!important;
+    }
     .font-s {
         font-size: 1.4em!important;
     }
@@ -256,6 +265,9 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) { 
+    .content{
+        font-size: 1.2em;
+    }
     .font-s {
         font-size: 0.7em;
     }
