@@ -109,7 +109,7 @@ table td{
 }
 
 .ui-widget-header {
-    background: #ccc url("../images/ui-bg_highlight-soft_75_cccccc_1x100.png");    
+    background: #ccc;
 }
 
 .ui-tabs .ui-tabs-panel{
@@ -225,6 +225,9 @@ table td{
      .six.columns.full {
         width: 50%;
     }
+    .disclaimer{
+        font-size: 0.4em;        
+    }
 }
 
 
@@ -238,6 +241,10 @@ and (-webkit-min-device-pixel-ratio: 1)  {
     .ui-accordion .ui-accordion-header{
         font-size: 1.2em!important;
     }
+    .ui-tabs .ui-tabs-nav li{
+        font-size: 1em!important;        
+    }
+
     .content{
         font-size: 1em!important;
     }
