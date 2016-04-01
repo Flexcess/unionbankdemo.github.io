@@ -1,5 +1,14 @@
  $(function(){
+    /*$('.slide').slick({
+      // adaptiveHeight: true,
+      autoplay: true,
+      dots: true,
+      mobileFirst: true,
 
+    });*/
+    $('.slide').unslider({
+        autoplay: true 
+      });
     $('#hamburgerOpen').click(function(){
       $('#sidemenu').animate({ right: "0" }, 500)
    });

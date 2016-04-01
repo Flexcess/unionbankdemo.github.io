@@ -10,12 +10,42 @@ body {
     overflow-x: hidden;
 }
 
-#mainBanner{
+.slick-slider{
+    margin-bottom: 0;
+}
+
+.slick-slide{
+    width:100vh;
+}
+
+.banner{
     height: 455px;
     background: url(../images/UBI_Banner.png) no-repeat center center;
     background-size: cover;
 }
 
+#mainBanner{
+    background-image: url(../images/UBI_Banner.png);
+}
+
+#banner2{
+    background-image: url(../images/UnionBankSydney.jpg);    
+}
+#banner3{
+    background-image: url(../images/Taxsaverdeposit.jpg);    
+}#banner4{
+    background-image: url(../images/personal_sal_banner.jpg);    
+}#banner5{
+    background-image: url(../images/banner_23.jpg);    
+}#banner6{
+    background-image: url(../images/UNIONBIOTECH_new_Hoarding1.jpg);    
+}#banner7{
+    background-image: url(../images/banner_new_24.jpg);    
+}#banner8{
+    background-image: url(../images/home-banner6.jpg);    
+}#banner9{
+    background-image: url(../images/home-banner3.jpg);    
+}
 #footer li:first-child{
   margin-bottom:0;
 }
