@@ -1,0 +1,11 @@
+function doSearchRedirect() {
+     var SearchBox = document.getElementById('SearchInput');
+
+     var SearchText = SearchBox.value.trim().replace(/ /g, '+');
+     //alert(SearchText);
+     if (SearchText != null && SearchText != '') {
+         var searchRedirectURL = 'SearchPage.aspx?zoom_sort=0&zoom_xml=0&zoom_query=' + SearchText + '&zoom_per_page=10&zoom_and=0';
+         window.location.href = searchRedirectURL;
+     }
+     
+ }

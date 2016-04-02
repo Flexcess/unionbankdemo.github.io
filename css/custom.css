@@ -61,6 +61,10 @@ body {
     color: #0F4C9C;
 }
 
+.bg-navyblue{
+    background: #0F4C9C;
+}
+
 .ui-widget-content li a{
     color: #333;
 }
@@ -157,6 +161,27 @@ table td{
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
     border: none;
     outline-width: 0;
+}
+
+.emicalc{
+
+}
+
+.emicalc input[type="text"]{
+    border:  1px solid #A2A2A2;
+    font-size: 26px;
+}
+
+.bg-red{
+    background: #A11D2A;
+    color: #ffffff;    
+}
+.emicalc input[type="button"]{
+    background: #0F4C9C;    
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    border: none;
 }
 
 #contactTooltip{
@@ -274,6 +299,10 @@ and (-webkit-min-device-pixel-ratio: 1)  {
         font-size: 1em!important;        
     }
 
+    .ui-tabs .ui-tabs-panel{
+        font-size: 30px!important;        
+    }
+
     .content{
         font-size: 1em!important;
     }
@@ -315,9 +344,9 @@ and (max-device-width : 667px) {
     #footer{
         font-size: 24px;
     }
-    #footer li:last-child{
-        font-size: 8px!important;
-    }
+   /*  #footer li:last-child{
+       font-size: 8px!important;
+   } */
 }
 
 .mainIcon{

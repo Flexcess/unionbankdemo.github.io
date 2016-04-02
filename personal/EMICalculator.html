@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <title>Union Bank Of India Right To Information</title>
+    <script src="../js/jquery-2.2.1.min.js"></script>
+    <script src="../js/common.js"></script>
+	<link rel="stylesheet" href="../css/skeleton.css">
+	<link rel="stylesheet" href="../css/custom.css"> 
+    <script>
+        function checnum(num)
+        {
+            var temp = num.value;
+            if(isNaN(temp))
+            {
+                temp = temp.substring(0,(temp.length-1));
+                num.value = temp;
+            }       
+        }
+
+        function fncInputNumericValuesOnly()    
+        {       
+
+        if(!((event.keyCode>=48 && event.keyCode<=57)||(event.keyCode==46)))
+            {           
+            
+                event.returnValue=false;
+            
+            }   
+        }
+
+        function fcalemi()
+        {
+            var loanamt = document.getElementById("loanamount").value;
+            var rate_pa = document.getElementById("rate").value;
+            var pmonths = document.getElementById("pmonths").value;
+
+            flag=true
+            
+            var re = new RegExp("^[0-9]*(\.[0-9]{1,2})?$");
+             var formatLine = document.getElementById("rate").value.toString();
+             var result_match = formatLine.match(re);
+          
+            if((loanamt=="")||(isNaN(loanamt)))
+            {
+             alert("Please Enter Loan amount");
+             document.getElementById("loanamount").focus();
+            flag=false
+            }
+            else if((parseFloat(loanamt)<1000)||(parseFloat(loanamt)>50000000))
+            {
+             alert("Please enter a Loan Amount between 1000 and 50000000 rupees");
+             document.getElementById("loanamount").focus();
+             flag=false
+            }else if((rate_pa=="")||(isNaN(rate_pa)))
+            {
+                 alert("Please Enter Rate of Interest");
+                 document.getElementById("rate").focus();
+                 flag=false
+            }  
+            else if(!result_match)
+            {
+              alert("Interest rate with more than 2 decimals not allowed");
+               document.getElementById("rate").focus();
+                flag=false
+            }
+            else if((parseFloat(rate_pa)<1.00)||(parseFloat(rate_pa)>99.99))
+            {
+             alert("Please a Interest rate between 1.00 and 99.99");
+              document.getElementById("rate").focus();
+             flag=false
+            } else  if((pmonths=="")||(isNaN(pmonths)))
+            {
+             alert("Please Enter Period (in Months)");
+             document.getElementById("pmonths").focus();
+             flag=false
+            }
+            else if((parseFloat(pmonths)<6)||(parseFloat(pmonths)>360))
+            {
+             alert("Please enter a Period of Loan between 6 and 360 months");
+             document.getElementById("pmonths").focus();
+             flag=false
+            }
+          
+            if (flag==true)
+            {
+                 document.getElementById("tbldata").style.visibility='visible';
+                var rate = rate_pa/(12*100);
+                var p = (loanamt * rate *Math.pow((1+rate),pmonths))/(Math.pow((1+rate),pmonths)-1);
+                var prin_amt = Math.round(p*100)/100;
+            
+                document.getElementById("EMI").value = prin_amt;
+            
+                var mon = Math.round(((pmonths * prin_amt) - loanamt)*100)/100;
+                document.getElementById("Avg_int").value = mon;
+            
+                var tot = Math.round((mon/pmonths)*100)/100;
+                document.getElementById("MI").value = tot;
+            
+                for(var i=0;i<pmonths;i++)
+                {
+                    var z = loanamt * rate * 1;
+                    var q = Math.round(z*100)/100;
+                    var t = p - z;
+                    var w = Math.round(t*100)/100;
+                    var e = loanamt-t;
+                    var l = Math.round(e*100)/100;
+                    loanamt=e;
+                }
+            }
+        }
+
+        function makevisible()
+        {
+
+            document.getElementById("tbldata").style.visibility='visible';
+        }
+
+        function makeinvisible()
+        {
+           document.getElementById("tbldata").style.visibility='hidden';
+        }
+
+    </script>
+</head>
+<body>
+  <!-- Header -->
+    <div id="topNav" class="u-full-width navbar-fixed-top bg-white border-bottom">
+        <span class="u-pull-left inline-block" style="margin-top:35px;"><a href="../index.html"><img src="../images/Union_Bank_of_India_Logo.png" alt="Union Bank of India logo"></a></span>  
+        <span class="u-pull-right inline-block">
+            <span class="inline-block" style="height: 90px;"></span>
+            <img src="../images/icons/menu-search.png" alt="search" class="align-middle margin-right">
+            <span class="inline-block margin-left margin-right align-middle" style="border:1px solid #0F4C9C;height: 45px;"></span>
+            <img class="margin-left-l align-middle" src="../images/icons/hamburger.png" alt="hamburger-menu" id="hamburgerOpen">
+        </span>
+    </div>
+    <div id="sidemenu" class="relative">
+        <div class="text-right bgap"><img class="margin-left-l align-middle" id="hamburgerClose" src="images/icons/hamburger-close.png" alt="hamburger-menu"></div>
+        <div id="holder" class="bgap margin-top-l">
+               <ul class="list-style-none text-right text-gray">
+                    <li class="text-caps"><a target="_blank"class="text-gray" href="https://www.unionbankonline.co.in/corp/BANKAWAY?Action.RetUser.Init.001=Y&AppSignonBankId=026&AppType=corporate">internet banking</a></li>
+                     <li class="text-caps"><a class="text-gray" href="personal/Careers.html">careers</a></li>
+                    <li class="text-caps"><a class="text-gray" href="personal/UBIOverview.html">profile</a></li>
+                    <li class="text-caps"><a class="text-gray" href="personal/PressReleases.html">press releases</a></li>
+                    <li class="text-caps"><a class="text-gray" href="personal/FarmersClubs.html">csr</a></li>
+                    <li class="text-caps"><a class="text-gray" href="personal/OnlineTaxPayment.html">online tax payment</a></li>
+                    <li class="text-caps"><a class="text-gray" href="personal/HomeLoan.html">retail loans</a></li>
+                    <li class="text-caps"><a class="text-gray" href="personal/UnionMiles.html">vehicle loans</a></li>
+                    <li class="text-caps"><a class="text-gray" href="personal/UnionEducation.html">education loans</a></li>
+                    <li class="text-caps"><a class="text-gray" href="personal/UnionMedicalLoan.html">medical loans</a></li>
+                    <li class="text-caps"><a class="text-gray" href="personal/Conversations.html">May we help you</a></li>
+                </ul>
+        </div>
+        <img id="bottomLogo" class="absolute absolute-center" src="images/icons/ubi-ham-logo.png" alt="UBI">        
+    </div>
+	<!-- Header End -->
+	<span class="u-cf"></span>
+    <div class="content">
+        <div class="leftingap rightingap">
+            <h1 class="font-2x margin-top-l text-caps">EMI Calculator</h1>
+        </div>    
+        <img src="../images/UBI_EMICalculator.jpg" alt="EMI" class="u-full-width bgap">
+        <div class="leftingap rightingap" style="font-size:26px;">
+            <table cellpadding="0" cellspacing="0" class="u-full-width font-l emicalc">
+                <tbody>
+                    <tr>
+                        <td style="width:10px"></td>
+                        <td>
+                            <table id="tblinput" class="u-full-width tb-border" align="center" cellspacing="0">
+                                <tbody>
+                                    <tr class="bg-red">
+                                        <td align="right" class="style1" style="width:55%">
+                                            EMI&nbsp;
+                                        </td>
+                                        <td align="left">
+                                            Calculator
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="style1">
+                                            <span id="Label1" >Loan Amount in Rs :</span>
+                                        </td>
+                                        <td align="left">
+                                            <input class="u-full-width" name="loanamount" type="text" id="loanamount"  onkeypress="fncinput class="u-full-width"NumericValuesOnly()">
+                                        </td>
+                                    </tr>
+                                    <tr id="Tr1">
+                                        <td align="left" class="style1">
+                                            <span id="Label2" >Interest Rate in % p.a. :</span>
+                                        </td>
+                                        <td align="left">
+                                            <input class="u-full-width" name="rate" type="text" id="rate"  onkeypress="fncinput class="u-full-width"NumericValuesOnly()">
+
+                                        </td>
+                                    </tr>
+                                    <tr id="Tr2">
+                                        <td align="left" class="style1">
+                                            <span id="Label3" >Period (in months) :</span></td>
+                                        <td align="left">
+                                            <input class="u-full-width" name="pmonths" type="text" id="pmonths"  onkeypress="fncinput class="u-full-width"NumericValuesOnly()">
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <br>
+                            <table id="Table1" align="center">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input name="Button1" type="button" id="Button1" onclick="javascript:fcalemi();" value="Calculate" align="middle">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <table id="tbldata" align="center" class="u-full-width tb-border">
+                                <tbody>
+                                    <tr class="center bg-red">
+                                        <td>
+                                            <div id="Label4" class="leftingap rightingap">EMI</div>
+                                        </td>
+                                        <td>
+                                            <div id="Label5" class="leftingap rightingap">Average Interest</div>
+                                        </td>
+                                        <td>
+                                            <div id="Label6" class="leftingap rightingap">Monthly Interest</div></td>
+                                    </tr>
+                                    <tr class="center">
+                                        <td>
+
+                                            <input class="u-full-width" name="EMI" type="text" id="EMI" readonly="readonly"  onkeyup="javascript:checnum(this);">
+                                        </td>
+                                        <td>
+                                            <input class="u-full-width" name="Avg_int" type="text" id="Avg_int" readonly="readonly"  onkeyup="javascript:checnum(this);">
+
+                                        </td>
+                                        <td>
+                                            <input class="u-full-width" name="MI" type="text" id="MI" readonly="readonly"  onkeyup="javascript:checnum(this);">
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td style="width:10px"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+ <div id="footer">
+        <div class="container">
+            <ul class="list-style-none center bgap margin-bottom-none">
+                <li><h1 class="font-xxl"><div class="text-left inline-block font-s" style="width: 30%"><a href="http://www.unionbankofindia.co.in" target="_blank">Go to desktop site</a></div><div style="width: 70%" class="text-right inline-block">Union Bank of India &#169; 2016</div></h1></li>
+                <li><div class="text-right"><a href="../Disclaimer.html" class="text-white">Terms & Conditions</a> | <a href="../RTI.html" class="text-white">RTI</a></div></li>
+            </ul>
+        </div>
+    </div>     
+</body>
+</html>

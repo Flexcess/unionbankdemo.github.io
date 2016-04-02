@@ -30,9 +30,7 @@
                 'MSME': ['MSME Overview', 'MSME Policy', 'Credit', 'Schemes', 'Channel Finance', 'Other Services', 'MSME Contact Points'],
                 'Financial Inclusion': ['Model For FI', 'Products for FI', 'Schemes Implemented', 'CSR', 'Useful Information'],
                 'About Us': ['Profile', 'Joint Venture', 'Investor Relations', 'Policies & Codes', 'Training System', 'Careers', 'KYC', 'Risk Management', 'CSR', 'MISC'],
-                'Govt. Business': ['Departmentalized Ministries Accounts', 'Government Savings Schemes', 'Tax Collection', 'Pension'],
-                /*'Investor Relations': ['Disclosures to Stock Exchange(s)', 'Shareholders Information', 'Financial Results', 'Annual Reports', 'Half Yearly Communicaions', 
-                                        'General Meetings', 'Key Managerial Personnel', 'Investor Grievence Mechanism'],*/
+                'Govt. Business': ['Departmentalized Ministries Accounts', 'Government Savings Schemes', 'Tax Collection', 'Pension'],               
                 },
         l2_map = {
             'Personal_Accounts': {'Current Accounts': 'personal/RegularCurrentAccount.html',
