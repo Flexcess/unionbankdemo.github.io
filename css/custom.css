@@ -218,8 +218,7 @@ table td{
     box-shadow:  -2px 0 5px 0 rgba(0,0,0,0.4),0 2px 10px 0 rgba(0,0,0,0.3);   
     font-size: 40px;
     letter-spacing: 2px;
-    padding: 70px;
-    /*padding-left: 10px;*/
+    padding: 30px 40px 70px 70px;
 }
 
 #sidemenu #bottomLogo{
@@ -422,8 +421,16 @@ button.back-btn:hover{
 }
 
 #topNav{
-    padding: 10px 20px 20px 20px;
+    padding: 10px 20px 18px 20px;
     z-index: 1000;
+}
+
+#topNav > span:first-of-type{
+   margin-top: 15px; 
+}
+
+#topNav > span:last-of-type {
+    margin-top: 30px;   
 }
 
 .center {
@@ -473,6 +480,25 @@ button.back-btn:hover{
     right: 20px;
     top: 40%;
     color: #333!important;
+}
+
+#searchHolder{
+     clear: both;
+    float: right;
+    margin-top: -56px;   
+}
+
+#searchQuery{
+   font-size: 30px;
+   border: 1px solid #ccc;
+   padding: 5px;
+   width: 50%; 
+}
+
+#searchBtn{
+    width: 20%;
+    vertical-align: middle;
+    padding: 3px;
 }
 
 td > ul{
