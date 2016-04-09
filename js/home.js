@@ -50,7 +50,7 @@
                 'Govt. Business': ['Departmentalized Ministries Accounts', 'Government Savings Schemes', 'Tax Collection', 'Pension'],               
                 },
         l2_map = {
-            'Personal_Accounts': {'Current Accounts': 'personal/RegularCurrentAccount.html',
+                'Personal_Accounts': {'Current Accounts': 'personal/RegularCurrentAccount.html',
                                     'Savings Accounts': 'personal/RegularSavingAccounts.html', 
                                     'Salary Accounts': 'personal/UnionSuperSalaryAccount.html', 
                                     'Recurring Deposit Scheme': 'personal/OrdinaryCumulativeDeposit.html',
@@ -58,7 +58,6 @@
                                     'Demat Accounts': 'personal/DematAccounts.html',
                                     'Online Trading Accounts': 'personal/OnlineTradingAccounts.html',
                                     'Useful Information': 'personal/UsefulInfo.html'},
-                                    
                 'Personal_Alternate Channel': {'ATMs': 'personal/ATM.html',
                                             'Internet Banking':'personal/InternetBanking.html',
                                             'Mobile Banking': 'personal/MobileBankingOverview.html',
