@@ -65,7 +65,7 @@
                                             'SMS Banking': 'personal/SMSBanking.html',
                                             'Kisan ATM': 'personal/KisanATM.html'},                      
                 'Personal_Cards': {'Credit Cards': 'personal/CreditCard.html',
-                                'Debit Cards': 'personal/DebitCard.html',
+                                    'Debit Cards': 'personal/DebitCard.html',
                                     'Gift Cards': 'personal/OtherCards.html',
                                     'Payroll Cards': 'personal/OtherCards.html',
                                     'Point of Sale terminal': 'personal/POSTerminal.html'},                                                
