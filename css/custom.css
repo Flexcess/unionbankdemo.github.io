@@ -178,24 +178,24 @@ table td{
 }
 
 #contactTooltip{
-    min-height: 500px;
+    min-height: 500px;   
     background: #3A3A3C;
     left: 0;
     border-bottom: 10px solid #A11D2A;
-    top: 960px;     
-    box-shadow: 0 -15px 10px rgba(0,0,0,0.2);   
+    top: 1040px;
+    box-shadow: 0 -15px 10px rgba(0,0,0,0.2);
     padding: 40px;
-    z-index: 1000;      
+    z-index: 1000;     
 }
 
 #contactTooltip:before {
     border-left: solid transparent 60px;
     border-right: solid transparent 3px;
-    border-bottom: solid #3A3A3C 50px;
-    top: -50px;
+    border-top: solid #3A3A3C 50px;
+    bottom: -50px;
     content: " ";
     height: 0;
-    left: 60%;
+    left: 45%;
     margin-left: -13px;
     position: absolute;
     width: 0;
