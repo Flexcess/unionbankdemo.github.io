@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <title>Union Bank Of India ATM Remittance</title>
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <script src="../js/jquery-2.2.1.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/common.js"></script>
+	<link rel="stylesheet" href="../css/skeleton.css">
+	<link rel="stylesheet" href="../css/custom.css"> 
+    <link rel="stylesheet" href="css/personal.css">
+    <script>
+       $(function(){
+            $( "#tabs" ).tabs();
+       })
+    </script>
+</head>
+<body>
+  <!-- Header -->
+   <div id="topNav" class="u-full-width navbar-fixed-top bg-white border-bottom">
+        <span class="u-pull-left inline-block"><a href="../index.html"><img src="../images/Union_Bank_of_India_Logo.png" alt="Union Bank of India logo"></a></span>  
+        <span class="u-pull-right inline-block">
+            <img src="../images/icons/menu-search.png" alt="search" class="align-middle margin-right">
+            <span class="inline-block margin-left margin-right align-middle" style="border:1px solid #0F4C9C;height: 45px;"></span>
+            <img class="margin-left-l align-middle" src="../images/icons/hamburger.png" alt="hamburger-menu" id="hamburgerOpen">
+        </span>
+    </div>
+    <div id="sidemenu" class="relative">
+        <div class="text-right bgap"><img class="margin-left-l align-middle" id="hamburgerClose" src="../images/icons/hamburger-close.png" alt="hamburger-menu"></div>
+        <div id="holder" class="bgap margin-top-l">
+               <ul class="list-style-none text-right text-gray">
+                    <li class="text-caps"><a target="_blank"class="text-gray" href="https://www.unionbankonline.co.in/corp/BANKAWAY?Action.RetUser.Init.001=Y&AppSignonBankId=026&AppType=corporate">internet banking</a></li>
+                    <li class="text-caps"><a class="text-gray" href="../personal/HomeLoan.html">retail loans</a></li>
+                    <li class="text-caps"><a class="text-gray" href="http://app.mapmyindia.com/UBI/index.htm">branch & atm locator</a></li>
+                     <li class="text-caps"><a class="text-gray" href="../personal/InterestRate.html">rates & charges</a></li>
+                     <li class="text-caps"><a class="text-gray" href="../personal/FormsDetail.html">forms</a></li>
+                     <li class="text-caps"><a class="text-gray" href="../personal/Careers.html">careers</a></li>
+                    <li class="text-caps"><a class="text-gray" href="../personal/OnlineRetailLoanApplication.html">apply online</a></li>
+                    <li class="text-caps"><a class="text-gray" href="../personal/CustomerServicePoint.html">customer service point</a></li>
+                    <li class="text-caps"><a class="text-gray" href="../personal/Conversations.html">FAQ’s</a></li>
+                </ul>
+        </div>
+        <img id="bottomLogo" class="absolute absolute-center" src="../images/icons/ubi-ham-logo.png" alt="UBI">        
+    </div>
+	<!-- Header End -->
+	<span class="u-cf"></span>
+    <div class="content">
+          <div class="leftingap rightingap">
+            <div class="underline">
+                <ul class="list-style-none font-s margin-top-l text-caps border-bottom">
+                    <li><a href="DigiPurse.html">Digi Purse</a></li>                  
+                    <li><a href="BranchIMPS.html">Branch IMPS</a></li>                  
+                    <li><a href="MobilePassbook.html">Mobile Passbook</a></li>                  
+                    <li><a href="ATM.html">ATMs</a></li>
+                    <li><a href="TalkingATM.html">Talking ATMs</a></li>
+                    <li>
+                        <div class="nav-group underline  text-navyblue">Remittance @ATMs <img class="caret-right margin-left margin-right" style="vertical-align:baseline" src="../images/icons/caret_right_100.png" alt=""></div>
+                        <ul>
+                            <li><a href="ECashATMRemittance.html" class="selected">E-Cash</a></li>
+                            <li><a href="NEFTATM.html">NEFT through ATM </a></li>
+                            <li><a href="IMPSATM.html">IMPS through ATM </a></li>                            
+                        </ul>
+                    </li>  
+                    <li>
+                        <div class="nav-group underline  text-navyblue">Internet Banking <img class="caret-right margin-left margin-right" style="vertical-align:baseline" src="../images/icons/caret_right_100.png" alt=""></div>
+                        <ul>
+                            <li><a href="InternetBanking.html">Overview</a></li>
+                            <li><a href="OnlineBankingSecurity.html">Online Security</a></li>
+                            <li><a href="https://www.unionbankonline.co.in/InternetBankingProductDemos/InternetBankingProductDemos.html" target="_blank">Demo</a></li>                            
+                        </ul>
+                    </li>       
+                    <li>
+                        <div class="nav-group underline  text-navyblue">Mobile Banking <img class="caret-right margin-left margin-right" style="vertical-align:baseline" src="../images/icons/caret_right_100.png" alt=""></div>
+                        <ul>
+                            <li><a href="MobileBankingOverview.html">Overview</a></li>
+                            <li><a href="https://www.unionbankonline.co.in/corp/BANKAWAY?Action.UBIMobileUser.Online=Y&amp;AppSignonBankId=026&amp;AppType=corporate" target="_blank">Online Mobile Banking Registration</a></li>
+                            <li><a href="IMPSFAQ.html">FAQ for IMPS</a></li>
+                            <li><a href="IMPSGuidelines.html">User Guidelines for IMPS</a></li>
+                            <li><a href="SMSBasedIMPS.html">SMS based IMPS</a></li>
+                            <li><a href="http://www.npci.org.in/bankmember.aspx">IMPS Member Bank</a></li>                            
+                        </ul>
+                    </li>          
+                    <li><a href="SMSBanking.html">SMS Banking</a></li>
+                    <li><a href="KisanATM.html">Kisan ATM</a></li>      
+                    <li><a href="SelfATMPinGeneration.html">Self ATM PIN Generation through IVR</a></li>    
+                </ul> 
+            </div>
+            <img src="../images/UBI_talkingATMS.jpg" alt="Remittance ATM" class="u-full-width bgap">                
+            <h1 class="font-xl margin-top bgap leftingap rightingap">ECASH</h1>
+         <div id="tabs">
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#faqs">FAQ</a></li>
+            </ul>   
+            <div id="features" class="font-s">
+                <div style="font-size:26px;">
+                   <table border="0" cellspacing="0" cellpadding="0" class="u-full-width">
+                        <tbody>
+                            <tr>
+                                <td >Union eCash- Transfer Emergency fund using MOBILE NUMBER through ATM and UMobile</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="fontfamilyarial font12 text" style="text-align: justify;" valign="top">
+                                    <p><strong>Highlights</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fontfamilyarial font12 text" style="text-align: justify;">
+                                    <p>Union eCash is remittance services which helps customers to send money to recipients who are not our bank customers. Anyone having a debit card of any bank can receive money and draw it from Union Bank ATMs.<br>
+                                        <br> The Solution enables remittance of money based on mobile number </p>
+                                    <ul class="ulstyle">
+                                        <li>Beneficiary having any bank debit&nbsp; card can withdraw&nbsp; the money </li>
+                                        <li>The facility of remittance is also available in all Union bank ATMs </li>
+                                        <li>Daily limit is Rs 5000&nbsp; and monthly Rs 25000</li>
+                                        <li>Minimum Union e-cash remittance will be for Rs 100</li>
+                                        <li>No partial withdrawal permitted</li>
+                                        <li>Union eCash remittance is absolutely FREE for Union Bank Customer</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="10">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="text font12 fontfamilyarial" style="text-align: justify;"><strong>REMITTANCE  OF MONEY</strong></td>
+                            </tr>
+
+                            <tr>
+                                <td class="fontfamilyarial font12 text" style="text-align: justify;">
+                                    <ul class="ulstyle">
+                                        <ul class="ulstyle">
+                                            <li>Visit any Union Bank ATM</li>
+                                            <li>Insert debit card </li>
+                                            <li>Select&nbsp; “Fund Transfer” option </li>
+                                            <li>Under fund transfer select “eCash” option </li>
+                                            <li>Under eCash option select “Issue Payment” option</li>
+                                            <li>Input the following details on system prompting:
+                                                <ul class="ulstyle">
+                                                    <li>Beneficiary&nbsp; mobile number </li>
+                                                    <li>Remitter mobile number </li>
+                                                    <li>Remitter PIN(to be created during transaction by remitter)</li>
+                                                    <li>Confirm Remitter PIN</li>
+                                                    <li>Amount to be remitted</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="ulstyle">
+                                            <li>System displays all the details entered by the customer and requests for confirmation </li>
+                                            <li>Upon confirmation&nbsp; a transaction success message will be displayed </li>
+                                            <li>Remitter will receive a confirmatory message on his mobile </li>
+                                            <li>Remitter has to convey Remitter PIN to the beneficiary</li>
+                                            <li>Beneficiary will receive a message on his mobile&nbsp; informing about the amount received&nbsp; on his mobile and the 4 digit system generated&nbsp; PIN </li>
+                                        </ul>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="10">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="fontfamilyarial font12 text" style="text-align: justify;"><strong>WITHDRAWAL OF MONEY</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="fontfamilyarial font12 text" style="text-align: justify;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="text font12 fontfamilyarial" style="text-align: justify;"><strong>Union e-cash withdrawal</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="fontfamilyarial font12 text" style="text-align: justify;">
+                                    <ul class="ulstyle">
+                                        <li>Beneficiary&nbsp; to visit Union Bank ATM&nbsp; for withdrawal of amount</li>
+                                        <li>Beneficiary&nbsp; to Insert debit card in to Union Bank ATM ( Any Bank debit card)</li>
+                                        <li>Authenticate by supplying ATM PIN</li>
+                                        <li>Select&nbsp; language option </li>
+                                        <li>Select&nbsp; “Fund transfer” option</li>
+                                        <li>Select "eCash” option </li>
+                                        <li>Select “eCash withdrawal”</li>
+                                        <li>Input the following details on system prompting:
+                                            <ul class="ulstyle">
+                                                <li>Beneficiary&nbsp; mobile number </li>
+                                                <li>Remitter PIN(which conveyed by remitter)</li>
+                                                <li>Beneficiary PIN(received by beneficiary via SMS)</li>
+                                                <li>Amount to be withdrawn ( No partial withdrawal is allowed )</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="ulstyle">
+                                        <li>Once confirmed&nbsp; a transaction success message will be displayed&nbsp; and cash will be dispensed. </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fontfamilyarial font12 text" style="text-align: justify;">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+               </div>
+            </div>
+            <div id="faqs" class="font-s">
+               <div style="font-size:26px;">
+                  <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                       
+                        <tr>
+                            <td class="fontfamilyarial font12" width="10%"><strong>1.</strong></td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;"><strong>What is Union e-cash?</strong></td>
+                        </tr>
+                        <tr>
+                            <td height="10">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">
+                                <p>Union<strong> </strong><strong>e-cash is emergency fund transfer to any customer  using mobile phones and ATM. </strong>Union<strong> </strong><strong>e-cash service facilitate Union  banks customer to </strong>send money to a receiver by using the receivers mobile number.<strong></strong><br>
+                                    <br> The receiver can withdraw money from any <strong>Union</strong> Bank of India ATM using a card. The receiver receives all the details required for withdrawal of cash on his or her mobile phone. <strong></strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="10">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td width="10%" valign="top"><strong>2.</strong></td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;" valign="top"><strong>Does the customer need to have a bank account for availing Union e-cash? </strong></td>
+                        </tr>
+                        <tr>
+                            <td height="10">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">Yes, the remitter needs to have a bank account with the Union Bank of India. Beneficiary need not have Union Bank of India account.</td>
+                        </tr>
+                        <tr>
+                            <td height="10">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td width="10%"><strong>3.</strong></td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;"><strong>   What beneficiary details does the customer need to do an Union e-cash remittance?</strong></td>
+                        </tr>
+                        <tr>
+                            <td height="10">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">Customer needs just a mobile number to do the Union e-cash remittance.</td>
+                        </tr>
+                        <tr>
+                            <td height="10">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td width="10%"><strong>4.</strong></td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;"><strong>   Is there any limit on the value of transactions in Union e-cash?</strong></td>
+                        </tr>
+                        <tr>
+                            <td height="10">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">
+                                <p>Transaction limits: Daily - Rs. 5000 Monthly - Rs. 25000</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="10">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td width="10%"><strong>5.</strong></td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;"><strong>   If customer is not a U-Mobile customer, can he/she do Union e-cash transfer?
+                                                                      </strong></td>
+                        </tr>
+                        <tr>
+                            <td height="10">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">Yes, you can do Union e-cash through Union bank of India ATMs using debit card.</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><strong>6</strong></td>
+                            <td class="text font12 fontfamilyarial" style="text-align: justify;"><strong>   Is the transfer through Union e-cash real time basis?</strong></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">Union e-cash transfer is real time basis activity. Beneficiary can withdrawal money after he receive beneficiary PIN through SMS. </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><strong>7</strong></td>
+                            <td class="text font12 fontfamilyarial" style="text-align: justify;"><strong>What if beneficiary don’t want to withdrawal the total amount which remitter sends him?</strong></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">Partially withdrawal is not allowed. </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><strong>8</strong></td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">
+                                <p><strong>&nbsp;Do customer need to pay any additional charges  for doing Union e-cash transfer?</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">
+                                <p>There are no surcharges for e-cash transactions at present.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><strong>9</strong></td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">
+                                <p><strong>If  beneficiary failed to withdrawal money how customer can get refund for the  same?</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">
+                                <p>In such case, there is Auto reversal of the said amount in the customer’s account within 7 working days.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><strong>10</strong></td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">
+                                <p><strong>If  beneficiary did not received SMS, Is there any provision to regenerate the  beneficiary PIN?</strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">
+                                <p>In such case, Customer can use Forget PIN option, to regenerate the beneficiary PIN</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><strong>11</strong></td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">
+                                <p><strong>Where  does customer can inquire status/register a complaint with reference to  the Union <strong>e-cash transaction?</strong></strong>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="5">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="fontfamilyarial font12 text" style="text-align: justify;">The complaint can be registered with our call center (1800 22 22 44)</td>
+                        </tr>
+                    </tbody>
+                </table>
+               </div>
+            </div>                         
+         </div>
+        </div>    
+    </div>
+ <div id="footer">
+        <div class="container">
+            <ul class="list-style-none center bgap margin-bottom-none">
+                <li><h1 class="font-xxl"><div class="text-left inline-block font-s" style="width: 30%"><a href="http://www.unionbankofindia.co.in" target="_blank">Go to desktop site</a></div><div style="width: 70%" class="text-right inline-block">Union Bank of India &#169; 2016</div></h1></li>
+                <li><div class="font-l text-right"><a href="../Disclaimer.html" class="text-white">Terms & Conditions</a> | <a href="../RTI.html" class="text-white">RTI</a></div></li>
+            </ul>
+        </div>
+    </div>     
+</body>
+</html>

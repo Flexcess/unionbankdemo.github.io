@@ -96,17 +96,17 @@
                                         'Loans For Pensioners': 'personal/PensionersShortTermLoans.html',
                                         'Tools': 'personal/EMICalculator.html'},
                 'Personal_Digital Banking': {
-                                            'Digi Purse' : 'personal/',
-                                            'Branch IMPS' : 'personal/',
-                                            'Mobile Passbook' : 'personal/',
+                                            'Digi Purse' : 'personal/DigiPurse.html',
+                                            'Branch IMPS' : 'personal/BranchIMPS.html',
+                                            'Mobile Passbook' : 'personal/MobilePassbook.html',
                                             'ATMs': 'personal/ATM.html',
-                                            'Talking ATMs': 'personal/',
-                                            'Remittance @ATMs': 'personal/',
+                                            'Talking ATMs': 'personal/TalkingATM.html',
+                                            'Remittance @ATMs': 'personal/ECashATMRemittance.html',
                                             'Internet Banking': 'personal/InternetBanking.html',
                                             'Mobile Banking': 'personal/MobileBankingOverview.html',
                                             'SMS Banking': 'personal/SMSBanking.html',
                                             'KISAN ATM': 'personal/KisanATM.html',
-                                            'Self ATM PIN Generation through IVR' : '',
+                                            'Self ATM PIN Generation through IVR' : 'personal/SelfATMPinGeneration.html',
                                             },
                 'Personal_TVC'  : {'TVC' : 'personal/TVC.html'},                         
                 'NRI_NRI Deposit': {'Feature of NRI Deposits': 'personal/NREAccount.html',
@@ -278,7 +278,7 @@
                                                                   },
                     'Investor Relations_Shareholding Pattern Overview' : {'Shareholding Pattern Overview' : 'personal/ShareholdingPatternOverview.html'},                                                   
                     'Investor Relations_Annual Reports' : {'Shareholding Pattern Overview' : 'personal/AnnualReports.html'},                                                   
-                    'Investor Relations_Performance' : {'Shareholding Pattern Overview' : 'personal/'},                                                   
+                    'Investor Relations_Performance' : {'Performance Reports' : 'personal/RBIFormatReports.html'},                                                   
                     'Investor Relations_Press Releases' : {'Working Results' : 'personal/PressReleases.html'},                                                   
                     'Investor Relations_Presentations' : {'Financial Results' : 'personal/FinancialResults.html'},            
                    'About Us_Profile'   : {'Union Bank of India - Overview' : 'personal/UBIOverview.html',
@@ -322,13 +322,13 @@
                         'Personal' : 'personal.png',
                         'NRI' : 'nri.png',
                         'International' : 'int.png',
+                        'MSME' : 'msme.png',
                         'Rural & Agri' : 'rural.png', 
                         'Corporate' : 'corp.png',
-                        'MSME' : 'msme.png',
                         'Financial Inclusion' : 'fin-incl.png',
-                        'About Us' : 'about-us.png',
                         'Govt. Business' : 'gov.png',
                         'Investor Relations' : 'investor.png',
+                        'About Us' : 'about-us.png',
                         };
 
         for(var key in map){
@@ -370,7 +370,7 @@
                                 +'</li>';
                     });
                     links += '</ul>';
-                    $('.content #navGrid').after(links);
+                    $(links).insertBefore('.bg-pale-light.center');
                     $('#catL2').accordion({
                         active: false,
                         collapsible: true,
