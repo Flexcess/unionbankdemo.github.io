@@ -39,17 +39,18 @@
    }); 
 
      var map = {
-                'Personal': ['Accounts', 'Retail Loans', 'Online Payments', 'Digital Banking', 'Cards', 'Insurance & Investment', 'Other Service'],
+                'Personal': ['Accounts', 'Retail Loans', 'Online Payments', 'Digital Banking', 'Cards', 'Insurance & Investment', 'Other Service', 'TVC'],
                 'NRI': ['NRI Deposit', 'NRI Investments', 'NRI Remittances', 'NRI Loans', 'NRI FAQs'],
                 'International': ['Exports', 'Remittances', 'Network', 'Other Services', 'Treasury', 'International FAQs'],
+                'MSME': ['MSME Overview', 'MSME Policy', 'Credit', 'Schemes', 'Channel Finance', 'Other Services', 'MSME Contact Points'],
                 'Rural & Agri': ['Short Term Credit', 'Long Term Credit', 'Other Credit', 'Financial Inclusion', 'CSR', 'Partners With Govt', 'Minority Welfare'],
                 'Corporate' : ['Deposit Accounts', 'Credit', 'Loan Syndication & Advisory', 'Selected Treasury Products', 'Government Business', 'Other Services', 'FAQs'],
-                'MSME': ['MSME Overview', 'MSME Policy', 'Credit', 'Schemes', 'Channel Finance', 'Other Services', 'MSME Contact Points'],
                 'Financial Inclusion': ['Model For FI', 'Products for FI', 'Schemes Implemented', 'CSR', 'Useful Information'],
-                'About Us': ['Profile', 'Joint Venture', 'Investor Relations', 'Policies & Codes', 'Training System', 'Careers', 'KYC', 'Risk Management', 'CSR', 'MISC'],
                 'Govt. Business': ['Departmentalized Ministries Accounts', 'Government Savings Schemes', 'Tax Collection', 'Pension'],               
+                'Investor Relations': ['Shareholders Information', 'Shareholding Pattern Overview', 'Annual Reports', 'Performance', 'Press Releases', 'Presentations'],                               
+                'About Us': ['Profile', 'Joint Venture', 'Investor Relations', 'Policies & Codes', 'Training System', 'Careers', 'KYC', 'Risk Management', 'CSR', 'MISC'],
                 },
-        l2_map = {
+        l2_map = {                                                       
                 'Personal_Accounts': {'Current Accounts': 'personal/RegularCurrentAccount.html',
                                     'Savings Accounts': 'personal/RegularSavingAccounts.html', 
                                     'Salary Accounts': 'personal/UnionSuperSalaryAccount.html', 
@@ -95,11 +96,19 @@
                                         'Loans For Pensioners': 'personal/PensionersShortTermLoans.html',
                                         'Tools': 'personal/EMICalculator.html'},
                 'Personal_Digital Banking': {
+                                            'Digi Purse' : 'personal/',
+                                            'Branch IMPS' : 'personal/',
+                                            'Mobile Passbook' : 'personal/',
                                             'ATMs': 'personal/ATM.html',
+                                            'Talking ATMs': 'personal/',
+                                            'Remittance @ATMs': 'personal/',
                                             'Internet Banking': 'personal/InternetBanking.html',
                                             'Mobile Banking': 'personal/MobileBankingOverview.html',
                                             'SMS Banking': 'personal/SMSBanking.html',
-                                            'KISAN ATM': 'personal/KisanATM.html'},
+                                            'KISAN ATM': 'personal/KisanATM.html',
+                                            'Self ATM PIN Generation through IVR' : '',
+                                            },
+                'Personal_TVC'  : {'TVC' : 'personal/TVC.html'},                         
                 'NRI_NRI Deposit': {'Feature of NRI Deposits': 'personal/NREAccount.html',
                                     'Savings Account': 'personal/NRESavingsAccount.html',
                                     'Current Account': 'personal/NRECurrentAccount.html',
@@ -256,6 +265,22 @@
                   'Rural & Agri_Minority Welfare'  : {'PMs 15 Point Program' : 'personal/PM15PTPGM.html',
                                                       'Three Year Road Map' : 'ThreeYrRoadMap.html',
                                                       'Implementation Of Sachar Committee Norms' : 'personal/SacharCommitteeNormsImplementation.html'},                                                                                             
+                   'Investor Relations_Shareholders Information': { 'Change of Address':'personal/ShareholderAddressChange.html',
+                                                                 'Dematerialisation of Shares':'pdf/About Us - Investor Relations - Shareholder\'s Information - Dematerialisation of shares.pdf',
+                                                                 'Dividend History':'pdf/DividendHistory0115.pdf',  
+                                                                 'Duplicate Dividend Warrants and Revalidation of Warrants':'pdf/INDEMNITYDUPDIVIDENDWARRANT.doc',  
+                                                                 'Duplicate Share Certificates':'pdf/INDEMNITYDUPDIVIDENDWARRANT.doc',  
+                                                                 'Direct Credit/NACH Credit Mandate Form':'personal/CreditMandate.html',  
+                                                                 'Equity History':'personal/EquityHistory.html',  
+                                                                 'Transfer of shares':'personal/ShareTransfers.html',  
+                                                                 'Transmission of shares':'personal/TransmissionOfShares.html',  
+                                                                 'Transposition of shares':'personal/TranspositionOfShares.html',  
+                                                                  },
+                    'Investor Relations_Shareholding Pattern Overview' : {'Shareholding Pattern Overview' : 'personal/ShareholdingPatternOverview.html'},                                                   
+                    'Investor Relations_Annual Reports' : {'Shareholding Pattern Overview' : 'personal/AnnualReports.html'},                                                   
+                    'Investor Relations_Performance' : {'Shareholding Pattern Overview' : 'personal/'},                                                   
+                    'Investor Relations_Press Releases' : {'Working Results' : 'personal/PressReleases.html'},                                                   
+                    'Investor Relations_Presentations' : {'Financial Results' : 'personal/FinancialResults.html'},            
                    'About Us_Profile'   : {'Union Bank of India - Overview' : 'personal/UBIOverview.html',
                                            'Board of Directors': 'personal/DirectorsList.html',
                                            'Organizational Chart' : 'personal/OrgChart.html',
@@ -345,7 +370,7 @@
                                 +'</li>';
                     });
                     links += '</ul>';
-                    $('.content').append(links);
+                    $('.content #navGrid').after(links);
                     $('#catL2').accordion({
                         active: false,
                         collapsible: true,
