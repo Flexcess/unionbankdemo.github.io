@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
      <meta charset="UTF-8">
-    <title>Union Bank Of India, SMS Based IMPS</title>
+    <title>Union Bank Of India Self ATM PIN Generation </title>
     <script src="../js/jquery-2.2.1.min.js"></script>
     <script src="../js/common.js"></script>
 	<link rel="stylesheet" href="../css/skeleton.css">
@@ -11,7 +11,7 @@
 </head>
 <body>
   <!-- Header -->
-	  <div id="topNav" class="u-full-width navbar-fixed-top bg-white border-bottom">
+   <div id="topNav" class="u-full-width navbar-fixed-top bg-white border-bottom">
         <span class="u-pull-left inline-block"><a href="../index.html"><img src="../images/Union_Bank_of_India_Logo.png" alt="Union Bank of India logo"></a></span>  
         <span class="u-pull-right inline-block">
             <img src="../images/icons/menu-search.png" alt="search" class="align-middle margin-right">
@@ -39,8 +39,9 @@
 	<!-- Header End -->
 	<span class="u-cf"></span>
     <div class="content">
-        <div class="leftingap rightingap">
-              <ul class="list-style-none font-s margin-top-l text-caps">
+          <div class="leftingap rightingap">
+            <div class="underline">
+                <ul class="list-style-none font-s margin-top-l text-caps border-bottom">
                     <li><a href="DigiPurse.html">Digi Purse</a></li>                  
                     <li><a href="BranchIMPS.html">Branch IMPS</a></li>                  
                     <li><a href="MobilePassbook.html">Mobile Passbook</a></li>                  
@@ -51,14 +52,14 @@
                         <ul>
                             <li><a href="ECashATMRemittance.html">E-Cash</a></li>
                             <li><a href="NEFTATM.html">NEFT through ATM </a></li>
-                           <li><a href="IMPSATM.html">IMPS through ATM </a></li>                            
+                            <li><a href="IMPSATM.html">IMPS through ATM </a></li>                            
                         </ul>
                     </li>  
                     <li>
                         <div class="nav-group underline  text-navyblue">Internet Banking <img class="caret-right margin-left margin-right" style="vertical-align:baseline" src="../images/icons/caret_right_100.png" alt=""></div>
                         <ul>
                             <li><a href="InternetBanking.html">Overview</a></li>
-                            <li><a href="OnlineBankingSecurity.html" class="selected">Online Security</a></li>
+                            <li><a href="OnlineBankingSecurity.html">Online Security</a></li>
                             <li><a href="https://www.unionbankonline.co.in/InternetBankingProductDemos/InternetBankingProductDemos.html" target="_blank">Demo</a></li>                            
                         </ul>
                     </li>       
@@ -69,78 +70,74 @@
                             <li><a href="https://www.unionbankonline.co.in/corp/BANKAWAY?Action.UBIMobileUser.Online=Y&amp;AppSignonBankId=026&amp;AppType=corporate" target="_blank">Online Mobile Banking Registration</a></li>
                             <li><a href="IMPSFAQ.html">FAQ for IMPS</a></li>
                             <li><a href="IMPSGuidelines.html">User Guidelines for IMPS</a></li>
-                            <li><a href="SMSBasedIMPS.html" class="selected">SMS based IMPS</a></li>
+                            <li><a href="SMSBasedIMPS.html">SMS based IMPS</a></li>
                             <li><a href="http://www.npci.org.in/bankmember.aspx">IMPS Member Bank</a></li>                            
                         </ul>
                     </li>          
                     <li><a href="SMSBanking.html">SMS Banking</a></li>
-                    <li><a href="KisanATM.html">Kisan ATM</a></li>
-                    <li><a href="SelfATMPinGeneration.html">Self ATM PIN Generation through IVR</a></li>
+                    <li><a href="KisanATM.html">Kisan ATM</a></li>      
+                    <li><a href="SelfATMPinGeneration.html" class="selected">Self ATM PIN Generation through IVR</a></li>    
                 </ul> 
-            <div class="divider"></div>
-            <h1 class="font-2x margin-top">FAQS FOR IMPS</h1>
-        </div>            
-            <img src="../images/UBI_IMPS.jpg" alt="IMPS" class="u-full-width bgap">
-            <div class="font-s leftingap rightingap">
-               <div class="margin-top-l">SMS BASED IMPS</div>
-               <div class="font-bold">SMS Tag List/Keyword</div>
-               <p class="margin-top font-bold">In order to use SMS based IMPS, customer needs to send SMS to 09223173921 using the following Keywords</p>
-               <div style="font-size:26px;">
-                   <table border="0" cellpadding="3" cellspacing="0" class="tb-border u-pull-width">
-                        <tbody>
-                            <tr>
-                                <td valign="top" width="201">
-                                    <p align="center">Transaction</p>
-                                </td>
-                                <td valign="top" width="497">
-                                    <p align="center">Keyword</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td valign="top" width="201">
-                                    <p>Register for IMPS</p>
-                                </td>
-                                <td valign="top" width="497">
-                                    <p>MMID</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td valign="top" width="201">
-                                    <p>Beneficiary IMPS</p>
-                                </td>
-                                <td valign="top" width="497">
-                                    <p>&lt;ADDIMPS&gt;&lt;MPIN&gt;&lt;Beneficiary
-                                    MMID&gt;&lt;Beneficiary Mobile No&gt;&lt;Beneficiary Nick
-                                    Name&gt;</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td valign="top" width="201">
-                                    <p>Payment</p>
-                                </td>
-                                <td valign="top" width="497">
-                                    <p>&lt;RIMPS&gt;&lt;MPIN&gt;&lt;Beneficiary Nick
-                                    Name&gt;&lt;Amount&gt;</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td valign="top" width="201">
-                                    <p>Deregister for IMPS</p>
-                                </td>
-                                <td valign="top" width="497">
-                                    <p>MMIDCANCEL</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>IMPS</td>
-                                <td>IMPS &lt;Beneficiary Mobile No&gt;&lt;Beneficiary
-                                MMID&gt;&lt;Amount&gt;&lt;MPIN&gt;</td>
-                            </tr>
-                        </tbody>
-                    </table>
-             </div> 
-        </div>
-     </div>
+            </div>
+            <img src="../images/UBI_talkingATMS.jpg" alt="Remittance ATM" class="u-full-width bgap">                
+            <h1 class="font-xl margin-top bgap leftingap rightingap">SELF ATM PIN GENERATION THROUGH IVR</h1>
+            <div style="font-size:26px;">
+              <table class="u-full-width" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr>
+                        <td width="50%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="fontfamilyarial font12 text" style="text-align: justify;" valign="top">
+                            <p><strong>Self ATM PIN Generation through IVR</strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fontfamilyarial font12 text" style="text-align: justify;">
+                            <p>This facility empowers you to regenerate your ATM PIN through IVR&nbsp; by calling up the 24 hour call center though your registered mobile number.<br>
+                                <br> Generate your ATM PIN through IVR just in two steps:</p>
+                            <ul class="ulstyle">
+                                <li>Call IVR / Call Centre toll free on 1800 22 22 44 or 1800 208 2244 on 022-25751500 / 25719600 ( chargeable) using the registered mobile number.</li>
+                                <li>Select option 2 ( Information on debit cards )</li>
+                                <li>Select option 4 ( Register for ATM PIN)</li>
+                                <li>Input your 16 digit Debit card number</li>
+                                <li>Input card expiry date in MMYY format</li>
+                                <li>Input your 15 digit account number</li>
+                                <li>Input your date of birth in DDMMYYYY format</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fontfamilyarial font12 text" style="text-align: justify;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="fontfamilyarial font12 text" style="text-align: justify;">
+                            <p>After successful registration you will receive 8 digit tracker ID:</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fontfamilyarial font12 text" style="text-align: justify;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="fontfamilyarial font12 text" style="text-align: justify;">
+                            <ul class="ulstyle">
+                                <li>Call IVR again and please be guided as per voice guidance and follow the steps</li>
+                                <li>Select option 5 ( Generating of ATM PIN)</li>
+                                <li>Input your&nbsp; 16 digit Debit card number</li>
+                                <li>Input card 3 digit CVV which is on the back of your debit card.</li>
+                                <li>Input the 8 digit tracker id received via SMS</li>
+                                <li>IVR prompts&nbsp; you to enter PIN number of your choice</li>
+                                <li>IVR prompts you to re enter the PIN for confirmation</li>
+                                <li>IVR informs that the PIN change is successful</li>
+                                <li>Your&nbsp; self&nbsp; generated PIN is ready for use</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>    
+    </div>
  <div id="footer">
         <div class="container">
             <ul class="list-style-none center bgap margin-bottom-none">
@@ -148,6 +145,6 @@
                 <li><div class="font-l text-right"><a href="../Disclaimer.html" class="text-white">Terms & Conditions</a> | <a href="../RTI.html" class="text-white">RTI</a></div></li>
             </ul>
         </div>
-    </div>      
+    </div>     
 </body>
 </html>
