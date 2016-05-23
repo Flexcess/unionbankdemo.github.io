@@ -367,7 +367,6 @@
                 setTimeout(function(){
                     var links = '<ul id="catL2" class="list-style-none margin-left margin-right margin-bottom">';                    
                     val.forEach(function(value, index){
-                        console.log(val);
                         links += '<li class="margin-bottom-none border">'+
                                     '<h3 class="margin-left-s"><span class="inline-block" style="width:85%">' + value + '</span><span class="u-pull-right">'+
                                     '<img class="icon margin-right-s align-middle" src="images/icons/grey/' + images[parent] + '" alt=""><img class="caret-right margin-left margin-right align-middle" src="images/icons/caret_right_100.png" alt=""></span></h3>'
@@ -375,7 +374,7 @@
                                 +'</li>';
                     });
                     links += '</ul>';
-                    $(links).after('.bg-pale-light.center');
+                    $(links).insertAfter('.bg-pale-light.center');
                     $('#catL2').accordion({
                         active: false,
                         collapsible: true,
@@ -386,7 +385,6 @@
                                 catL2 = l2_map[parent + '_' + ui.newHeader.text()];
                                 var content = '';
                                 for(var catL3 in catL2){
-                                    console.log(catL3);
                                     var gapClass = catL3 == Object.keys(catL2)[Object.keys(catL2).length - 1] ? 
                                                 '' : 'margin-bottom bgap-xl border-bottom margin-top-l ';
                                     content += '<div class="' + gapClass +'font-xxl"><a class="text-black" href="' + catL2[catL3] + '">' + catL3 + '</a></div>';
@@ -407,9 +405,7 @@
             $btn.addClass('hide');
 
             $('img[src*=red]').each(function(val, index){
-              console.log($(this).attr('src'));
               var src = $(this).attr('src').replace('red','grey');
-              console.log(src);
               $(this).attr('src', src);
             });
 
