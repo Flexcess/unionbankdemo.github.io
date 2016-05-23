@@ -375,7 +375,7 @@
                                 +'</li>';
                     });
                     links += '</ul>';
-                    $(links).insertBefore('.bg-pale-light.center');
+                    $(links).after('.bg-pale-light.center');
                     $('#catL2').accordion({
                         active: false,
                         collapsible: true,
