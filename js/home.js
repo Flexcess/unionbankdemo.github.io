@@ -37,12 +37,16 @@
    $('.ct-tooltip').click(function(){
     $('#contactTooltip').fadeToggle();
    }); 
+   
+   $('.banner').click(function(){
+       alert('clicked');
+   })
 
      var map = {
                 'Personal': ['Accounts', 'Retail Loans', 'Online Payments', 'Digital Banking', 'Cards', 'Insurance & Investment', 'Other Service', 'TVC'],
                 'NRI': ['NRI Deposit', 'NRI Investments', 'NRI Remittances', 'NRI Loans', 'NRI FAQs'],
-                'International': ['Exports', 'Remittances', 'Network', 'Other Services', 'Treasury', 'International FAQs'],
                 'MSME': ['MSME Overview', 'MSME Policy', 'Credit', 'Schemes', 'Channel Finance', 'Other Services', 'MSME Contact Points'],
+                'International': ['Exports', 'Remittances', 'Network', 'Other Services', 'Treasury', 'International FAQs'],
                 'Rural & Agri': ['Short Term Credit', 'Long Term Credit', 'Other Credit', 'Financial Inclusion', 'CSR', 'Partners With Govt', 'Minority Welfare'],
                 'Corporate' : ['Deposit Accounts', 'Credit', 'Loan Syndication & Advisory', 'Selected Treasury Products', 'Government Business', 'Other Services', 'FAQs'],
                 'Financial Inclusion': ['Model For FI', 'Products for FI', 'Schemes Implemented', 'CSR', 'Useful Information'],
@@ -68,7 +72,8 @@
                                     'Debit Cards': 'personal/DebitCard.html',
                                     'Gift Cards': 'personal/OtherCards.html',
                                     'Payroll Cards': 'personal/OtherCards.html',
-                                    'Point of Sale terminal': 'personal/POSTerminal.html'},                                                
+                                    'Point of Sale terminal': 'personal/POSTerminal.html',
+                                    'IRCTC Union Bank Prepaid Card' : 'personal/IRCTCCard.html'    },                                                
                 'Personal_Insurance & Investment': {'Mutual Fund': 'personal/MutualFunds.html',
                                                     'Life Insurance': 'personal/LifeInsurance.html',
                                                     'General Insurance': 'personal/NonLifeInsurance.html',

@@ -182,24 +182,27 @@ table td{
     background: #3A3A3C;
     left: 0;
     border-bottom: 10px solid #A11D2A;
-    top: 1040px;
+    top: 960px;
     box-shadow: 0 -15px 10px rgba(0,0,0,0.2);
     padding: 40px;
     z-index: 1000;
-    width: 91.5%;     
+    width: 91.5%;    
 }
 
 #contactTooltip:before {
     border-left: solid transparent 60px;
     border-right: solid transparent 3px;
-    border-top: solid #3A3A3C 50px;
-    bottom: -50px;
+    border-bottom: solid #3A3A3C 50px;
+    top: -50px;
     content: " ";
     height: 0;
-    left: 45%;
+    left: 44%;
     margin-left: -13px;
     position: absolute;
     width: 0;
+}
+#contactTooltip>ul{
+    margin-left: 0;
 }
 #sidemenu{
     width:500px;
