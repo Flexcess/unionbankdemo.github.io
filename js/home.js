@@ -374,7 +374,7 @@
                                 +'</li>';
                     });
                     links += '</ul>';
-                    $(links).insertAfter('.bg-pale-light.center');
+                    $(links).insertAfter('.back-btn');
                     $('#catL2').accordion({
                         active: false,
                         collapsible: true,
