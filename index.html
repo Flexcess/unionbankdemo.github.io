@@ -12,18 +12,57 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css">
 	<link rel="stylesheet" href="css/custom.css">    
     <link rel="stylesheet" href="css/unslider.css">    
-<<<<<<< HEAD
     <link rel="stylesheet" href="css/unslider-dots.css">
-=======
     <link rel="stylesheet" href="css/unslider-dots.css">     
-  <!--  <script type="text/javascript">
-   
-    if (screen.width <= 800) {
-      window.location = "http://m.unionbankofindia.co.in";
+  <style>
+       @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2){
+        /* Styles */
+            #tnc{
+                font-size: 18px;
+            }
+            #notice{
+                font-size:18px;
+               line-height: 1.4;
+            }
+            #desktop{
+                font-size: 32px;
+            }
+            #org{
+                font-size: 38px;
+            }
+        }
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-device-width: 1024px) and (min-device-width: 768px){
+            #tnc {
+                font-size: 26px;
+            }
+             #notice{
+                font-size:26px
+            }
+            #org{
+                font-size: 30px;
+            }
+        }
+     @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2){
+        #footer li:last-child {
+            font-size: 20px!important;
+        }
+        #desktop{
+            width: 35%;
+            font-size: 30px;
+        }
+          #tnc {
+            font-size: 14px;
+            }
+       #org{
+            font-size: 36px;
+       }
+       #notice{
+            font-size: 0.7em;
+            line-height: 1.4;
+       }
     }
-    
-  </script> -->
->>>>>>> origin/master
+  </style>
 </head>
 <body>
 	<!-- Header -->
@@ -58,25 +97,25 @@
         <div class="slide">
             <ul>
                <li>
-                    <div class="banner" id="banner3"></div>                    
+                    <div class="banner" data-slide="1" id="banner3"></div>                    
                </li>
                <li>
-                    <div class="banner" id="banner4"></div>                   
+                    <div class="banner"  data-slide="2" id="banner4"></div>                   
                </li>
                <li>
-                   <div class="banner" id="banner5"></div>                   
+                   <div class="banner"  data-slide="3" id="banner5"></div>                   
                </li>
                <li>
-                    <div class="banner" id="banner6"></div>                   
+                    <div class="banner"  data-slide="4" id="banner6"></div>                   
                </li>
                <li>
-                    <div class="banner" id="banner7"></div>                   
+                    <div class="banner"  data-slide="5" id="banner7"></div>                   
                </li>
                <li>
-                    <div class="banner" id="banner8"></div>                   
+                    <div class="banner"  data-slide="6" id="banner8"></div>                   
                </li>
                <li>
-                    <div class="banner" id="banner9"></div>                                      
+                    <div class="banner"  data-slide="7" id="banner9"></div>                                      
                </li>
             </ul>
         </div>
@@ -120,28 +159,17 @@
                     </ul>
                 </div>
             </div>
-			<!--<ul class="list list-horizontal spacing-l bgap-0">
-				<li class="margin-bottom-none">
-					
-				</li>
-				<li class="margin-bottom-none">
-				
-				</li>
-                <li>
-                
-                </li>
-			</ul>-->
 		</div>		
         <div class="bgap margin-top-l"><button class="margin-left btn bg-black text-offwhite font-l padding hide back-btn raleway">Back</button></div>
 		<div class="font-xl nav-grid-icon bgap" id="navGrid">           
 		</div>        
 	</div>    
-    <div id="footer">
-        <div class="container">
-            <ul class="list-style-none center bgap margin-bottom-none">
-                <li><h1 class="font-xxl"><div class="text-left inline-block font-s" style="width: 30%"><a href="http://www.unionbankofindia.co.in" target="_blank">Go to desktop site</a></div><div style="width: 70%" class="text-right inline-block">Union Bank of India &#169; 2016</div></h1></li>
-                <li><div class="font-l text-right"><a href="Disclaimer.html" class="text-white">Terms & Conditions</a> | <a href="RTI.html" class="text-white">RTI</a></div></li>
-            </ul>
+	<span class="u-cf"></span>
+    <div id="footer" class="margin-top">
+        <div class="container" style="font-size:26px">
+            <div class="text-left inline-block" id="desktop" style="width: 35%"><a href="http://www.unionbankofindia.co.in" target="_blank">Go to desktop site</a></div><div id="org" style="width: 65%" class="text-right inline-block">Union Bank of India &#169; 2016</div></h1></li>
+            <div id="tnc" class="text-right border-bottom bgap"><a href="../Disclaimer.html" class="text-white">Terms & Conditions</a> | <a href="../RTI.html" class="text-white">RTI</a></div>
+            <div class="margin-top bgap center" id="notice">This is an abridged version of the bank's website, for full details, please refer the bank's desktop website www.unionbankofindia.co.in on a desktop device.</div>
         </div>
     </div>
 </body>

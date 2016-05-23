@@ -38,10 +38,6 @@
     $('#contactTooltip').fadeToggle();
    }); 
    
-   $('.banner').click(function(){
-       alert('clicked');
-   })
-
      var map = {
                 'Personal': ['Accounts', 'Retail Loans', 'Online Payments', 'Digital Banking', 'Cards', 'Insurance & Investment', 'Other Service', 'TVC'],
                 'NRI': ['NRI Deposit', 'NRI Investments', 'NRI Remittances', 'NRI Loans', 'NRI FAQs'],
@@ -356,6 +352,15 @@
         }
         $('#navGrid').append(catStr);
         
+         var links = ['http://www.unionbankofindia.co.in/personal_tax_saver.aspx', 'http://www.unionbankofindia.co.in/personal_retail_homeloan.aspx',
+                        'http://www.unionbankofindia.co.in/Union_Smart_Save.aspx', '  http://www.unionbankofindia.co.in/UNION_BIO_TECH.aspx',
+                        'http://www.unionbankofindia.co.in/MSME_Scheme_Union_Nari_Shakti.aspx', 'http://www.unionbankofindia.co.in/BillPay.aspx',
+                        'http://www.unionbankofindia.co.in/pdf/tabulousPR.pdf' 
+                        ]
+         $('.banner').click(function(){
+              window.open(links[$(this).data('slide')],'_blank');
+         }) 
+        
         $('.nav-grid-icon .columns').click(function(){
             var parent = $(this).find('[data-group]').data('group'),
                 val = map[parent],
@@ -393,7 +398,7 @@
                               }
                             }
                     });
-                    $('.back-btn').text(parent + ' / Back').removeClass('hide')
+                    $('.back-btn').text((parent == 'Personal' ? 'Personal Banking' : parent) + ' / Back').removeClass('hide')
                 }, 500);            
     });
     

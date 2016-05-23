@@ -8,6 +8,39 @@
     <script src="../js/common.js"></script>
     <link rel="stylesheet" href="../css/skeleton.css">
 	<link rel="stylesheet" href="../css/custom.css">    
+    <style>
+    @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+        #tnc{
+            font-size:10px
+        }
+        #notice{
+            font-size:10px
+        }
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-device-width: 1024px) and (min-device-width: 768px){
+        #footer #tnc {
+           font-size: 18px;
+        }
+    }
+     @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2){
+         #footer #tnc {
+           font-size: 10px;
+        }
+        #desktop{
+            width: 35%;
+            font-size: 30px;
+        }
+       #org{
+            font-size: 36px;
+       }
+       #notice{
+            font-size: 0.4em;
+            line-height: 1.4;
+       }
+    }
+  </style>
 </head>
 <body>
 	<!-- Header -->
@@ -76,12 +109,11 @@
         </ul>
        </div>
 	</div>    
-    <div id="footer">
-        <div class="container">
-            <ul class="list-style-none center bgap margin-bottom-none">
-                <li><h1 class="font-xxl"><div class="text-left inline-block font-s" style="width: 30%"><a href="http://www.unionbankofindia.co.in" target="_blank">Go to desktop site</a></div><div style="width: 70%" class="text-right inline-block">Union Bank of India &#169; 2016</div></h1></li>
-                <li><div class="font-l text-right"><a href="Disclaimer.html" class="text-white">Terms & Conditions</a> | <a href="RTI.html" class="text-white">RTI</a></div></li>
-            </ul>
+    <div id="footer" class="margin-top">
+        <div class="container" style="font-size:26px">
+            <div class="text-left inline-block" id="desktop" style="width: 35%"><a href="http://www.unionbankofindia.co.in" target="_blank">Go to desktop site</a></div><div id="org" style="width: 65%" class="text-right inline-block">Union Bank of India &#169; 2016</div></h1></li>
+            <div id="tnc" class="text-right border-bottom bgap"><a href="../Disclaimer.html" class="text-white">Terms & Conditions</a> | <a href="../RTI.html" class="text-white">RTI</a></div>
+            <div class="margin-top bgap center" id="notice">This is an abridged version of the bank's website, for full details, please refer the bank's desktop website www.unionbankofindia.co.in on a desktop device.</div>
         </div>
     </div>
 </body>

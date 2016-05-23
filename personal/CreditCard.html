@@ -12,6 +12,12 @@
     <script>
        $(function(){
             $( "#tabs" ).tabs();
+            $('[href="#usecure"], [href="#signature"]').click(function(){
+                debugger;
+                setTimeout(function(){
+                    window.history.replaceState(null, null, window.location.href.replace('#',''));                    
+                },200)
+            })
        })
     </script>
 </head>
@@ -58,14 +64,13 @@
             <div class="margin-top-l font-s">
                 <h3 class="">Navigate to:</h3>
                <ul class="list-style-none font-s margin-top-l text-caps list-vspace-l">
-                    <li><a href="https://ubi.electracard.com/ubi/enrollment/enroll_welcome.jsp" class="text-navyblue">Verifed by VISA/MasterCard</a></li>
+                    <li><a href="https://ubi.electracard.com/ubi/enrollment/enroll_welcome.jsp" target="_blank" class="text-navyblue">Verifed by VISA/MasterCard</a></li>
                     <li><a href="#usecure" class="text-navyblue">Usecure Credit Card</a></li>
                     <li><a href="#signature" class="text-navyblue">Signature Credit Card</a></li>
                </ul> 
             </div>            
           </div>
-          <h1 class="lefingap rightingap font-xl">Credit Card</h1>
-        <!--<div class="ccard currentBanner u-full-width bgap"></div>-->
+          <h1 class="leftingap rightingap font-xl">Credit Card</h1>
         <img src="../images/UBI_credit_card.jpg" alt="Union Bank’s Credit Card" class="u-full-width bgap">                
         
          <div id="tabs">
@@ -393,10 +398,10 @@
                                     <table cellpadding="1" cellspacing="0" class="u-pull-width font-2x tb-border">
                                         <tbody>
                                             <tr>
-                                                <td valign="top" width="132">
+                                                <td valign="top">
                                                     <p><span class="font-bold">Particulars</span></p>
                                                 </td>
-                                                <td valign="top" width="462">
+                                                <td valign="top">
                                                     <p><span class="font-bold">Usecure Card (against term deposit)</span></p>
                                                 </td>
                                             </tr>
@@ -560,7 +565,10 @@
         <div class="container">
             <ul class="list-style-none center bgap margin-bottom-none">
                 <li><h1 class="font-xxl"><div class="text-left inline-block font-s" style="width: 30%"><a href="http://www.unionbankofindia.co.in" target="_blank">Go to desktop site</a></div><div style="width: 70%" class="text-right inline-block">Union Bank of India &#169; 2016</div></h1></li>
-                <li><div class="font-l text-right"><a href="../Disclaimer.html" class="text-white">Terms & Conditions</a> | <a href="../RTI.html" class="text-white">RTI</a></div></li>
+                <li>
+                    <div class="font-l text-right border-bottom bgap"><a href="../Disclaimer.html" class="text-white">Terms & Conditions</a> | <a href="../RTI.html" class="text-white">RTI</a></div>
+                    <div class="margin-top font-l">This is an abridged version of the bank's website, for full details, please refer the bank's desktop website www.unionbankofindia.co.in on a desktop device.</div>
+                </li>                
             </ul>
         </div>
     </div>        
