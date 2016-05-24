@@ -352,12 +352,13 @@
         }
         $('#navGrid').append(catStr);
         
-         var links = ['http://www.unionbankofindia.co.in/personal_tax_saver.aspx', 'http://www.unionbankofindia.co.in/personal_retail_homeloan.aspx',
-                        'http://www.unionbankofindia.co.in/Union_Smart_Save.aspx', '  http://www.unionbankofindia.co.in/UNION_BIO_TECH.aspx',
+         var links = ['', 'http://www.unionbankofindia.co.in/personal_tax_saver.aspx', 'http://www.unionbankofindia.co.in/personal_retail_homeloan.aspx',
+                        'http://www.unionbankofindia.co.in/Union_Smart_Save.aspx', 'http://www.unionbankofindia.co.in/UNION_BIO_TECH.aspx',
                         'http://www.unionbankofindia.co.in/MSME_Scheme_Union_Nari_Shakti.aspx', 'http://www.unionbankofindia.co.in/BillPay.aspx',
                         'http://www.unionbankofindia.co.in/pdf/tabulousPR.pdf' 
                         ]
          $('.banner').click(function(){
+             if(links[$(this).data('slide')].length)
               window.open(links[$(this).data('slide')],'_blank');
          }) 
         
