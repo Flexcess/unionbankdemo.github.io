@@ -419,7 +419,9 @@
     });
     
     $(document).on('click', '#catL2 h3', function (e) {
+        var $current = $('.rotated-icon').parents('h3'); 
         $('.rotated-icon').removeClass('rotated-icon');
-        $(this).find('.caret-right').addClass('rotated-icon');
+        if(!$(event.currentTarget.activeElement).is( $current))
+         $(this).find('.caret-right').addClass('rotated-icon');
     }); 
 });
