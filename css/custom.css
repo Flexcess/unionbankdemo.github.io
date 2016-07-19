@@ -441,6 +441,10 @@ button.back-btn:hover{
     text-decoration: underline;
 }
 
+.text-italic{
+    font-style: italic;
+}
+
 .text-caps{
     text-transform: uppercase;
 }
