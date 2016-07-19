@@ -185,6 +185,7 @@
                                    'Credit Disbursal Documentation' : 'personal/MSMEDocs.html',
                                    'Bank\'s Statistics' : 'personal/MSMEBankStats.html' },
                  'MSME_Schemes' : { 'Union High Pride' : 'personal/MSMEUnionHighPride.html',
+                                    'Union Progress' : 'personal/MSMEUnionProgress.html',
                                     'Union SME Plus' : 'personal/MSMEUnionSMEPlus.html',
                                     'Union Support' : 'personal/MSMEUnionSupport.html',
                                     'Union Transport' : 'personal/MSMEUnionTransport.html',
