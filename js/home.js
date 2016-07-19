@@ -148,7 +148,10 @@
                    'International_International FAQs' : {'FAQ' : 'personal/NRIFAQ.html',},                          
                  'Financial Inclusion_Model For FI' : {'Introduction' : 'personal/FinancialInclusion.html'},
                  'Financial Inclusion_PMJJBY' : {'Pradhan Mantri Jeevan Jyoti Bima Yojana': 'personal/PMJBY.html'},
-                //  'Financial Inclusion_Products For FI' : {'No Frills Account': 'personal/NoFrillsAccount.html'},
+                 'Financial Inclusion_Products For FI' : {
+                                                            // 'No Frills Account': 'personal/NoFrillsAccount.html'
+                                                            'Products for FI': 'personal/RemittanceProduct.html',
+                                                                        },
                  'Financial Inclusion_Schemes Implemented' : {'Union Adarsh Gram': 'personal/UnionAdarshGram.html',
                                                               'Financial Literacy (FLCC)': 'personal/FLCC.html' },
                  'Financial Inclusion_Projects Undertaken' : {'NDDB' : 'personal/DairyUnderNDDB.html',
