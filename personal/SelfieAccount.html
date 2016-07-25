@@ -8,7 +8,31 @@
 	<link rel="stylesheet" href="../css/skeleton.css">
 	<link rel="stylesheet" href="../css/custom.css"> 
     <link rel="stylesheet" href="css/personal.css">
-    
+    <style>
+        @media only screen and (min-device-width : 375px) and (max-device-width : 667px){
+            #footer .font-s {
+                font-size: 0.7em!important;
+                    line-height: 30px;
+            }
+            #footer #notice{
+                font-size: 0.5em!important;
+            }
+        }
+        @media (min-width: 480px){
+              #footer #notice{
+                font-size: 0.5em!important;
+            }
+        }
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-device-width: 1024px) and (min-device-width: 768px){
+            #footer .font-s {
+                font-size: 1.1em!important;
+            }
+             #footer #notice{
+                font-size: 1.1em!important;
+            }
+        }
+    </style>
 </head>
 <body>
   <!-- Header -->
@@ -61,8 +85,8 @@ of the address portion of Aadhaar card and the front side of your PAN Card and s
     <div id="footer" class="margin-top">
         <div class="container" style="font-size:24px">
             <div class="text-left inline-block" id="desktop" style="width: 35%"><a href="http://www.unionbankofindia.co.in" class="font-l" target="_blank">Go to desktop site</a></div><div id="org" style="width: 65%" class="text-right inline-block font-xxl">Union Bank of India &#169; 2016</div></h1></li>
-            <div id="tnc" class="text-right border-bottom font-s" style="font-size:0.6em;line-height: 30px;"><a href="../Disclaimer.html" class="font-s text-white">Terms & Conditions</a> <span class="font-s">|</span> <a href="../RTI.html" class="font-s text-white">RTI</a></div>
-            <div class="margin-top bgap center" style="font-size:0.5em" id="notice">This is an abridged version of the bank's website, for full details, please refer the bank's desktop website www.unionbankofindia.co.in on a desktop device.</div>
+            <div id="tnc" class="text-right border-bottom font-s"><a href="../Disclaimer.html" class="font-s text-white">Terms & Conditions</a> <span class="font-s">|</span> <a href="../RTI.html" class="font-s text-white">RTI</a></div>
+            <div class="margin-top bgap center" id="notice">This is an abridged version of the bank's website, for full details, please refer the bank's desktop website www.unionbankofindia.co.in on a desktop device.</div>
         </div>
     </div>     
 </body>
