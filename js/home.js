@@ -23,9 +23,10 @@
         $('#searchBtn').click();
       }
     });
-    $('.slide').unslider({
-        autoplay: true 
-      });
+    if($('.slide').length)
+        $('.slide').unslider({
+            autoplay: true 
+        });
     $('#hamburgerOpen').click(function(){
       $('#sidemenu').animate({ right: "0" }, 500)
    });
