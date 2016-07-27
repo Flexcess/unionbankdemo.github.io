@@ -13,9 +13,7 @@
                 width: 48%!important;
             }           
         }
-        img.caret-right{
-                height: 25px;
-            }
+       
         @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2){ 
          .container{
                 font-size: 50px!important;
@@ -44,6 +42,9 @@
         }
         .margin-right-s{
             margin-right:5px;
+        }
+        .margin-left-s{
+            margin-left: 5px;
         }
     </style>
     <script>
@@ -675,14 +676,14 @@
                             '<div class="columns six center full">' +
                                 '<div class="text-center margin-top-l">'+
                                     '<div data-group="' + key + '" class="text-caps font-bold bgap-l"><img class="icon margin-right-s align-middle" src="images/icons/grey/' + images[key] + '" alt=""><span class="margin-right-s align-middle">' +  key + '</span>' +
-                                    '<img class="expand-collapse caret-right margin-right align-middle rotated-icon" src="images/icons/caret_right_100.png" alt=""></div>' +
+                                    '<img class="expand-collapse caret-right margin-right align-middle rotated-icon margin-left-s" src="images/icons/caret_right_100.png" alt=""></div>' +
                                         child +
                                 '</div>' +
                             '</div>'
                     :  '<div class="columns six center full">' +
                             '<div class="text-center margin-top-l">'+
                                      '<div data-group="' + key + '" class="text-caps font-bold bgap-l"><img class="icon margin-right-s align-middle" src="images/icons/grey/' + images[key] + '" alt=""><span class="margin-right-s align-middle">' +  key + '</span>' +
-                                    '<img class="expand-collapse caret-right margin-right align-middle rotated-icon" src="images/icons/caret_right_100.png" alt=""></div>' +
+                                    '<img class="expand-collapse caret-right margin-right align-middle rotated-icon margin-left-s" src="images/icons/caret_right_100.png" alt=""></div>' +
                                     child +                                
                             '</div>' +
                         '</div>'+
