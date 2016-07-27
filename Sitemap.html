@@ -658,13 +658,13 @@
                         categories = arguments[2],  
                         pages = l2_map[l2_cat];
 
-                    child += '<li class="margin-bottom-none border">'+
+                    child += '<li class="border">'+
                                 '<div class="margin-left-s">' + l2_cat.replace(parent + '_', '') + '</div>'
                             +'</li>';
                     if(Object.keys(pages).length)
                         child += '<ul>'
                     for(var page in pages){
-                            child += '<li class="margin-bottom-none catL3">'+
+                            child += '<li class="catL3">'+
                                         '<div class="margin-left-s"><a href="' + l2_link[l2_cat][page] +'">' + pages[page] + '</a></div>'
                                     +'</li>';
                     }
