@@ -12,6 +12,12 @@
             .six.columns.full {
                 width: 48%!important;
             }           
+            .icon.icon-sitemap{
+                height:25px;
+            }
+            img.caret-right.icon-sitemap{
+                height:15px;                
+            }
         }
        
         @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2){ 
@@ -649,7 +655,7 @@
                         'About Us' : 'about-us.png',
                         };
             for(var key in map){
-                var child = '<ul class="font-s catL2">', 
+                var child = '<ul class="font-s catL2 list-style-none">', 
                     parent = key,
                     categories = Object.keys(l2_map).filter(function(key){return (key.indexOf(parent + '_') > -1 )}) ;
 
@@ -675,15 +681,15 @@
                         ? '<div class="row">'+                                   
                             '<div class="columns six center full">' +
                                 '<div class="text-center margin-top-l">'+
-                                    '<div data-group="' + key + '" class="text-caps font-bold bgap-l"><img class="icon margin-right-s align-middle" src="images/icons/grey/' + images[key] + '" alt=""><span class="margin-right-s align-middle">' +  key + '</span>' +
-                                    '<img class="expand-collapse caret-right margin-right align-middle rotated-icon margin-left-s" src="images/icons/caret_right_100.png" alt=""></div>' +
+                                    '<div data-group="' + key + '" class="text-caps font-bold bgap-l"><img class="icon icon-sitemap margin-right-s align-middle" src="images/icons/grey/' + images[key] + '" alt=""><span class="margin-right-s align-middle">' +  key + '</span>' +
+                                    '<img class="expand-collapse caret-right icon-sitemap margin-right align-middle rotated-icon margin-left-s" src="images/icons/caret_right_100.png" alt=""></div>' +
                                         child +
                                 '</div>' +
                             '</div>'
                     :  '<div class="columns six center full">' +
                             '<div class="text-center margin-top-l">'+
-                                     '<div data-group="' + key + '" class="text-caps font-bold bgap-l"><img class="icon margin-right-s align-middle" src="images/icons/grey/' + images[key] + '" alt=""><span class="margin-right-s align-middle">' +  key + '</span>' +
-                                    '<img class="expand-collapse caret-right margin-right align-middle rotated-icon margin-left-s" src="images/icons/caret_right_100.png" alt=""></div>' +
+                                     '<div data-group="' + key + '" class="text-caps font-bold bgap-l"><img class="icon icon-sitemap margin-right-s align-middle" src="images/icons/grey/' + images[key] + '" alt=""><span class="margin-right-s align-middle">' +  key + '</span>' +
+                                    '<img class="expand-collapse caret-right margin-right icon-sitemap align-middle rotated-icon margin-left-s" src="images/icons/caret_right_100.png" alt=""></div>' +
                                     child +                                
                             '</div>' +
                         '</div>'+
