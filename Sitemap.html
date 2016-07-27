@@ -4,14 +4,46 @@
      <meta charset="UTF-8">
     <title>Union Bank Of India, Chief Invigilance Officer</title>
     <script src="js/jquery-2.2.1.min.js"></script>
-    <script src="js/common.js"></script>
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/custom.css"> 
+    <link rel="stylesheet" href="personal/css/personal.css">  
     <style>
         @media (min-width: 480px){
             .six.columns.full {
                 width: 48%!important;
+            }           
+        }
+        img.caret-right{
+                height: 25px;
             }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2){ 
+         .container{
+                font-size: 50px!important;
+            }
+             li.catL3{
+                padding-bottom: 20px;
+            }
+            img.icon{
+                height: 40px;
+            }
+             [data-group]{
+                    font-size: 0.7em!important;                
+                }
+            
+        }
+        @media only screen   and (min-device-width: 768px)  and (max-device-width: 1024px)  and (-webkit-min-device-pixel-ratio: 1){
+            [data-group]{
+                    font-size: 1.5em!important;                
+                }
+            img.icon {
+                height: 40px;
+            }
+        }
+        li{
+            word-wrap: break-word;
+        }
+        .margin-right-s{
+            margin-right:5px;
         }
     </style>
     <script>
@@ -603,8 +635,20 @@
         };
 
             var catStr = '',count = 0, pagesStr = '<ul class="font-s">';
+            var images = {
+                        'Personal' : 'personal.png',
+                        'NRI' : 'nri.png',
+                        'International' : 'int.png',
+                        'MSME' : 'msme.png',
+                        'Rural & Agri' : 'rural.png', 
+                        'Corporate' : 'corp.png',
+                        'Financial Inclusion' : 'fin-incl.png',
+                        'Govt. Business' : 'gov.png',
+                        'Investor Relations' : 'investor.png',
+                        'About Us' : 'about-us.png',
+                        };
             for(var key in map){
-                var child = '<ul class="font-s">', 
+                var child = '<ul class="font-s catL2">', 
                     parent = key,
                     categories = Object.keys(l2_map).filter(function(key){return (key.indexOf(parent + '_') > -1 )}) ;
 
@@ -619,7 +663,7 @@
                     if(Object.keys(pages).length)
                         child += '<ul>'
                     for(var page in pages){
-                            child += '<li class="margin-bottom-none">'+
+                            child += '<li class="margin-bottom-none catL3">'+
                                         '<div class="margin-left-s"><a href="' + l2_link[l2_cat][page] +'">' + pages[page] + '</a></div>'
                                     +'</li>';
                     }
@@ -630,13 +674,15 @@
                         ? '<div class="row">'+                                   
                             '<div class="columns six center full">' +
                                 '<div class="text-center margin-top-l">'+
-                                    '<div data-group="' + key + '" class="text-caps font-bold bgap-l">' +  key +'</div>' +
+                                    '<div data-group="' + key + '" class="text-caps font-bold bgap-l"><img class="icon margin-right-s align-middle" src="images/icons/grey/' + images[key] + '" alt=""><span class="margin-right-s align-middle">' +  key + '</span>' +
+                                    '<img class="expand-collapse caret-right margin-right align-middle rotated-icon" src="images/icons/caret_right_100.png" alt=""></div>' +
                                         child +
                                 '</div>' +
                             '</div>'
                     :  '<div class="columns six center full">' +
                             '<div class="text-center margin-top-l">'+
-                                '<div data-group="' + key + '" class="text-caps font-bold bgap-l">' +  key +'</div>' +
+                                     '<div data-group="' + key + '" class="text-caps font-bold bgap-l"><img class="icon margin-right-s align-middle" src="images/icons/grey/' + images[key] + '" alt=""><span class="margin-right-s align-middle">' +  key + '</span>' +
+                                    '<img class="expand-collapse caret-right margin-right align-middle rotated-icon" src="images/icons/caret_right_100.png" alt=""></div>' +
                                     child +                                
                             '</div>' +
                         '</div>'+
@@ -644,6 +690,19 @@
             count++;
                     }        
             $('.container').append(catStr);
+
+             $(document).on('click', '[data-group]', function() {
+                var $header = $(this).next('ul.catL2'),
+                    $caret = $(this).find('img.expand-collapse'); 
+                    if(!$header.find('li').is(':visible')){
+                        $header.slideDown();
+                        $caret.addClass('rotated-icon');
+                    }
+                    else{
+                        $header.slideUp();
+                        $caret.removeClass('rotated-icon');
+                    }
+            });
         })
     </script>
 </head>
