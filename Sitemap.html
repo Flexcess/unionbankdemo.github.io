@@ -74,8 +74,18 @@
                 'About Us': ['Profile', 'Joint Venture', 'Investor Relations', 'Policies & Codes', 'Training System', 'Careers', 'KYC', 'Risk Management', 'CSR', 'MISC'],
                 },
         l2_map = {                                                       
-                'Personal_Accounts': {'Current Accounts': 'Regular Current Account',
-                                    'Savings Accounts': 'Regular Saving Accounts', 
+                'Personal_Accounts': {'Current Accounts': {
+                                                            'Regular Current Account' : 'personal/RegularCurrentAccount.html',     
+                                                            'Union Classic Current A/c (Corporate)' : 'personal/FirmClassicCurrentAccount.html',     
+                                                            },
+                                    'Savings Accounts': {
+                                                            'Basic Savings Accounts' : 'personal/BasicSavingsAccount.html',     
+                                                            'Regular Savings Accounts' : 'personal/RegularSavingAccounts.html',     
+                                                            'Union Family Savings Scheme' : 'personal/FamilySavingsScheme.html',     
+                                                            'Union Capital Gains Deposit Scheme' : 'personal/UnionCapitalGainScheme.html',     
+                                                            'Union Flexi Savings Deposit Scheme' : 'personal/UnionFlexiSavingsDeposit.html',     
+                                                            'Union Flexi Plus Savings Deposit Scheme' : 'personal/UnionFlexiPlusSavingsDeposit.html',     
+                                                            },
                                     'Salary Accounts': 'Union SuperSalary Account', 
                                     'Recurring Deposit Scheme': 'Ordinary Cumulative Deposit',
                                     'Fixed Deposit Accounts': 'FD Accounts',
@@ -89,8 +99,7 @@
                                             'Kisan ATM': 'Kisan ATM'},                      
                 'Personal_Cards': {'Credit Cards': 'Credit Card',
                                     'Debit Cards': 'Debit Card',
-                                    'Gift Cards': 'Other Cards',
-                                    'Payroll Cards': 'Other Cards',
+                                    'Other Cards': 'Gift Cards & Payroll Cards',
                                     'Point of Sale terminal': 'POS Terminal',
                                     'IRCTC Union Bank Prepaid Card' : 'IRCTC Card'    },    
                 'Personal_PMJDY' : { 'PRADHAN MANTRI JAN-DHAN YOJANA (PMJDY)' : 'PMJDY FAQ' },                                                       
@@ -100,7 +109,9 @@
                                                     'Union Demat': 'Demat Accounts',
                                                     'Online Trading Account': 'Online Trading Accounts',
                                                     'ASBA Applications': 'ASBA',
-                                                    'Tax Saving Deposits': 'PMSBY'},                                                                        
+                                                    'Tax Saving Deposits': 'PMSBY',
+                                                    'Gold Coins': 'personal/GoldCoins.html',
+                                                },                                                                        
                 'Personal_Online Payments': {'Union Bill Pay': 'Union Bill PayDesk',
                                             'Bill Pay Online': 'Union Bill Online Pay',
                                             'NEFT': 'NEFT',
@@ -110,6 +121,7 @@
                                             'E-Ticketing KIOSK': 'pdf/personal-online%20payments-EticketingKiosk.pdf',
                                             'Online DGFT Payment': 'Exch Rate Others'},                                                                
                 'Personal_Other Service': { 'Collection Of Cheques' : 'Multi City ChequeBook',
+                                            'Union Reach - IAVR Banking' : 'Union Reach IAVR Banking',
                                             'Call Center 24*7': 'Call Center Overview'},                                                                
                 'Personal_Retail Loans': {'Home Loans': 'Home Loan',
                                         'Vehicle Loans': 'Union Miles',
@@ -126,9 +138,24 @@
                                             'Mobile Passbook' : 'Mobile Passbook',
                                             'ATMs': 'ATM',
                                             'Talking ATMs': 'Talking ATM',
-                                            'Remittance @ATMs': 'ECash ATM Remittance',
-                                            'Internet Banking': 'Internet Banking',
-                                            'Mobile Banking': 'Mobile Banking Overview',
+                                            'Remittance @ATMs':{
+                                                                 'ECash ATM Remittance' : 'personal/ECashATMRemittance.html',
+                                                                 'NEFT through ATM' : 'personal/NEFTATM.html',
+                                                                 'IMPS through ATM' : 'personal/IMPSATM.html',
+                                                                },
+                                            
+                                            'Internet Banking': {
+                                                                 'Overview' : 'personal/InternetBanking.html',
+                                                                 'Online Security' : 'personal/OnlineBankingSecurity.html',
+                                                                 'Demo' : 'https://www.unionbankonline.co.in/InternetBankingProductDemos/InternetBankingProductDemos.html',
+                                                                },
+                                            'Mobile Banking': {
+                                                                 'Overview' : 'personal/MobileBankingOverview.html',
+                                                                 'Online Mobile Banking Registration' : 'https://www.unionbankonline.co.in/corp/BANKAWAY?Action.UBIMobileUser.Online=Y&amp;AppSignonBankId=026&amp;AppType=corporate',
+                                                                 'FAQ for IMPS' : 'personal/IMPSFAQ.html',
+                                                                 'SMS based IMPS' : 'personal/SMSBasedIMPS.html',
+                                                                 'IMPS Member Bank' : 'http://www.npci.org.in/bankmember.aspx',
+                                                                },
                                             'SMS Banking': 'SMS Banking',
                                             'KISAN ATM': 'Kisan ATM',
                                             'Self ATM PIN Generation through IVR' : 'Self ATM Pin Generation',
@@ -160,15 +187,30 @@
                                             'Online DGFT Payment': 'Online DGFT Payment'},                
                 'International_Remittances': {'E-REMIT': 'E-REMIT'},                    
                 'International_Network': {'Authorised Dealing Branches': 'pdf/IBD-Network-authorised dealing branches.pdf',
-                                        'Correspondent Banks': 'NOSTRO Account',
-                                        'Overseas Branches': 'IBD Network HongKong'},
+                                           'Correspondent Banks': 'NOSTRO Account',
+                                           'Overseas Branches': {
+                                                                    'Hong Kong Branch' : 'personal/IBD_Network_HongKong.html',
+                                                                    'DIFC Branch' : 'personal/DIFC_Branch.html',
+                                                                    'Antwerp Branch' : 'personal/ANTWERP_BRANCH.html',
+                                                                    'London Subsidiary' : 'personal/IBD_Network_SUBSIDIARY_UK.html',
+                                                                    'Abu Dhabi Representative Office' : 'personal/IBD_Network_Abhdhavi.html',
+                                                                    'Beijing Representative Office' : 'personal/IBD_Network_Bejing.html',
+                                                                    'Shanghai Representative Office' : 'personal/IBD_Network_Shanghai.html',
+                                                                    'Sydney Representative Office' : 'personal/IBD_Network_Sydney.html',
+                                                                }
+                                        },
                 'International_Other Services': {'Foreign Currency Loans': 'Foreign Currency Loans',
                                                 'Exchange Rate Feed Over Reuters': 'Exch Rate Others',
                                                 'Online DGFT Payment': 'Online DGFT Payment',
                                                 'ECGC Cover': 'ECGC Cover'},
                 'International_Treasury': {'State of Art': 'Treasury State Of The Art',
                                             'Products & Services': 'Products Services Options',
-                                            'Gold': 'Union Gold'},
+                                            'Gold': {
+                                                        'Union Gold' : 'personal/UnionGold.html',
+                                                        'Union Bullion' : 'personal/Bullion.html',
+                                                        'Gold Forward' : 'personal/GoldForward.html',
+                                                    }
+                                        },
                    'International_International FAQs' : {'FAQ' : 'NRI FAQ',},                          
                  'Financial Inclusion_Model For FI' : {'Introduction' : 'Financial Inclusion'},
                  'Financial Inclusion_PMJJBY' : {'Pradhan Mantri Jeevan Jyoti Bima Yojana': 'PMJBY'},
@@ -196,9 +238,14 @@
                                             'Indirect Taxes': 'Indirect Taxes',
                                             'State Tax Collections': 'State Tax Collections',
                                             'New Pension Scheme 2009': 'New Pension Scheme',
-                                            'Govt. Deposit Scheme': 'Public Provident Fund',
-                                            'Pension': 'Central Civil Pension',
-                                            'Govt. Bonds': 'RBI Taxable Bonds',
+                                            'Govt. Deposit Scheme': {
+                                                                        'Public Provident Fund' : 'personal/PublicProvidentFund.html',
+                                                                        'Senior Citizens Savings scheme' : 'personal/SeniorCitizensScheme.html',
+                                                                    },
+                                            'Govt. Bonds': {
+                                                                'RBI 8% TAXABLE BONDS' : 'personal/RBITaxableBonds.html',
+                                                                'Inflation Indexed National Saving Securities- Cumulative (IINSS-C)' : 'personal/IINSSC.html',
+                                                            },
                                             'Departmentalised Ministries Account': 'Dept Ministries Account'},
                  'MSME_MSME Overview' : { 'Overview' : 'MSME Overview',
                                           'MSME Definition' : 'MSME Definition',
@@ -325,9 +372,16 @@
                     'Investor Relations_Press Releases' : {'Working Results' : 'Press Releases'},                                                   
                     'Investor Relations_Presentations' : {'Financial Results' : 'Financial Results'},            
                    'About Us_Profile'   : {'Union Bank of India - Overview' : 'UBI Overview',
-                                           'Board of Directors': 'Directors List',
-                                           'Organizational Chart' : 'Org Chart',
-                                           'Awards & Commendations' : 'Awards',                                           
+                                           'Corporate Vision' : 'Corporate Vision',                   
+                                           'Corporate Mission' : 'Corporate Mission',                   
+                                           'Board of Directors': {
+                                                                    'List of Directors' : 'DirectorsList.html',
+                                                                    'Executive Directors: CMD & EDs' : 'ExecDirectors.html',
+                                                                    'ENon Executive Directors' : 'NonExecDirectors.html',
+                                                                },
+                                           'Organizational Chart' : 'Organizational Chart',
+                                           'Awards & Commendations' : 'Awards & Commendations',                                           
+                                           'Code Of Conduct for Directors' : 'pdf/CODE_OF_CONDUCT_OF_DIRECTORS.pdf',                                           
                                          },
                    'About Us_Joint Venture'   : {'Star Union Dai-ichi Life Insurance' : 'Star Union Dai Ichi',
                                                  'Union KBC Mutual Fund': 'Union KBC',                                         
@@ -376,8 +430,7 @@
                                             'Kisan ATM': 'personal/KisanATM.html'},                      
                 'Personal_Cards': {'Credit Cards': 'personal/CreditCard.html',
                                     'Debit Cards': 'personal/DebitCard.html',
-                                    'Gift Cards': 'personal/OtherCards.html',
-                                    'Payroll Cards': 'personal/OtherCards.html',
+                                    'Other Cards': 'personal/OtherCards.html',
                                     'Point of Sale terminal': 'personal/POSTerminal.html',
                                     'IRCTC Union Bank Prepaid Card' : 'personal/IRCTCCard.html'    },    
                 'Personal_PMJDY' : { 'PRADHAN MANTRI JAN-DHAN YOJANA (PMJDY)' : 'personal/PMJDY-FAQ.html' },                                                       
@@ -387,7 +440,9 @@
                                                     'Union Demat': 'personal/DematAccounts.html',
                                                     'Online Trading Account': 'personal/OnlineTradingAccounts.html',
                                                     'ASBA Applications': 'personal/ASBA.html',
-                                                    'Tax Saving Deposits': 'personal/PMSBY.html'},                                                                        
+                                                    'Tax Saving Deposits': 'personal/PMSBY.html',
+                                                    'Gold Coins': 'personal/GoldCoins.html',
+                                                },                                                                        
                 'Personal_Online Payments': {'Union Bill Pay': 'personal/UnionBillPayDesk.html',
                                             'Bill Pay Online': 'personal/UnionBillOnlinePay.html',
                                             'NEFT': 'personal/NEFT.html',
@@ -397,7 +452,9 @@
                                             'E-Ticketing KIOSK': 'pdf/personal-online%20payments-EticketingKiosk.pdf',
                                             'Online DGFT Payment': 'personal/ExchRateOthers.html'},                                                                
                 'Personal_Other Service': { 'Collection Of Cheques' : 'MultiCityChequeBook.html',
-                                            'Call Center 24*7': 'personal/CallCenterOverview.html'},                                                                
+                                            'Call Center 24*7': 'personal/CallCenterOverview.html',
+                                            'Union Reach - IAVR Banking' : 'personal/UnionReachIAVRBanking.html',
+                                        },                                                                
                 'Personal_Retail Loans': {'Home Loans': 'personal/HomeLoan.html',
                                         'Vehicle Loans': 'personal/UnionMiles.html',
                                         'Education Loan': 'personal/UnionEducation.html',
@@ -483,7 +540,6 @@
                                             'Indirect Taxes': 'personal/IndirectTaxes.html',
                                             'State Tax Collections': 'personal/StateTaxCollections.html',
                                             'New Pension Scheme 2009': 'personal/NewPensionScheme.html',
-                                            'Govt. Deposit Scheme': 'personal/PublicProvidentFund.html',
                                             'Pension': 'personal/CentralCivilPension.html',
                                             'Govt. Bonds': 'personal/RBITaxableBonds.html',
                                             'Departmentalised Ministries Account': 'personal/DeptMinistriesAccount.html'},
@@ -676,24 +732,35 @@
                     if(Object.keys(pages).length)
                         child += '<ul>'
                     for(var page in pages){
+                         if(typeof pages[page] == "string")
                             child += '<li class="catL3">'+
                                         '<div class="margin-left-s"><a href="' + l2_link[l2_cat][page] +'">' + pages[page] + '</a></div>'
                                     +'</li>';
+                        else if(typeof pages[page] == "object"){
+                            var  subCategories = pages[page];
+                            child += '<li>' + page + '</li>' + '<ul>';
+                            for(var subCategory in subCategories){
+                                 child += '<li class="catL3">'+
+                                            '<div class="margin-left-s"><a href="' + subCategories[subCategory ] +'">' + subCategory + '</a></div>'
+                                        +'</li>';
+                            }
+                            child += '</ul>';
+                        }
                     }
                     child +=  Object.keys(pages).length ? '</ul></li>' : '</li>';
                 });
                 child += '</ul>';
               catStr += (count % 2 == 0) 
                         ? '<div class="row">'+                                   
-                            '<div class="columns six center full">' +
-                                '<div class="text-center margin-top-l">'+
+                            '<div class="columns six full">' +
+                                '<div class="margin-top-l">'+
                                     '<div data-group="' + key + '" class="text-caps font-bold bgap-l"><img class="icon icon-sitemap margin-right-s align-middle" src="images/icons/grey/' + images[key] + '" alt=""><span class="margin-right-s align-middle">' +  key + '</span>' +
                                     '<img class="expand-collapse caret-right icon-sitemap margin-right align-middle rotated-icon margin-left-s" src="images/icons/caret_right_100.png" alt=""></div>' +
                                         child +
                                 '</div>' +
                             '</div>'
-                        :  '<div class="columns six center full">' +
-                                '<div class="text-center margin-top-l">'+
+                        :  '<div class="columns six full">' +
+                                '<div class="margin-top-l">'+
                                         '<div data-group="' + key + '" class="text-caps font-bold bgap-l"><img class="icon icon-sitemap margin-right-s align-middle" src="images/icons/grey/' + images[key] + '" alt=""><span class="margin-right-s align-middle">' +  key + '</span>' +
                                         '<img class="expand-collapse caret-right margin-right icon-sitemap align-middle rotated-icon margin-left-s" src="images/icons/caret_right_100.png" alt=""></div>' +
                                         child +                                
