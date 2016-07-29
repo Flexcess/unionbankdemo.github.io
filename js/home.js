@@ -46,7 +46,7 @@
                 'International': ['Exports', 'Remittances', 'Network', 'Other Services', 'Treasury', 'International FAQs'],
                 'Rural & Agri': ['Short Term Credit', 'Long Term Credit', 'Other Credit', 'Financial Inclusion', 'CSR', 'Partners With Govt', 'Minority Welfare'],
                 'Corporate' : ['Deposit Accounts', 'Credit', 'Loan Syndication & Advisory', 'Selected Treasury Products', 'Government Business', 'Other Services', 'FAQs'],
-                'Financial Inclusion': ['Model For FI', 'PMJJBY','Products For FI', 'Schemes Implemented', 'CSR', 'Useful Information'],
+                'Financial Inclusion': ['Model For FI', 'PMJJBY','Products For FI', 'Schemes Implemented', 'CSR', 'Useful Information', 'PMJDY', 'PMJJBY', 'PMSBY'],
                 'Govt. Business': ['Departmentalized Ministries Accounts', 'Government Savings Schemes', 'Tax Collection', 'Pension'],               
                 'Investor Relations': ['Shareholders Information', 'Shareholding Pattern Overview', 'Annual Reports', 'Performance', 'Press Releases', 'Presentations'],                               
                 'About Us': ['Profile', 'Joint Venture', 'Investor Relations', 'Policies & Codes', 'Training System', 'Careers', 'KYC', 'Risk Management', 'CSR', 'MISC'],
@@ -149,7 +149,6 @@
                                             'Gold': 'personal/UnionGold.html'},
                    'International_International FAQs' : {'FAQ' : 'personal/NRIFAQ.html',},                          
                  'Financial Inclusion_Model For FI' : {'Introduction' : 'personal/FinancialInclusion.html'},
-                 'Financial Inclusion_PMJJBY' : {'Pradhan Mantri Jeevan Jyoti Bima Yojana': 'personal/PMJBY.html'},
                  'Financial Inclusion_Products For FI' : {
                                                             // 'No Frills Account': 'personal/NoFrillsAccount.html'
                                                             'Products for FI': 'personal/RemittanceProduct.html',
@@ -160,6 +159,9 @@
                                                               'NREGP & SSP Employment' : 'NREGP_SSP.html' },
                  'Financial Inclusion_CSR' : {'Village Knowledge Center': 'personal/VKC.html'},
                  'Financial Inclusion_Useful Information' : {'Useful Information': '/pdf/RABD-Useful info-Villages with 2000 plus Population.pdf'},  
+                 'Financial Inclusion_PMJDY' : {'PRADHAN MANTRI JAN-DHAN YOJANA (PMJDY)': 'personal/PMJDY-FAQ'},  
+                 'Financial Inclusion_PMJJBY' : {'Pradhan Mantri Jeevan Jyoti Bima Yojana': 'personal/PMJBY.html'},
+                 'Financial Inclusion_PMSBY' : {'Pradhan Mantri Suraksha Bima Yojana [PMSBY]': 'personal/PMSBY.html'},  
                  'Govt. Business_Departmentalized Ministries Accounts' : {'DMA Overview' : 'personal/DeptMinistriesAccount.html'},
                  'Govt. Business_Government Savings Schemes' : {'PPF' : 'personal/PublicProvidentFund.html',
                                                                  'Senior Citizens Savings scheme' : 'personal/SeniorCitizensScheme.html', 
