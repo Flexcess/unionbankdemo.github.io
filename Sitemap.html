@@ -914,15 +914,15 @@
                         ? '<div class="row">'+                                   
                             '<div class="columns six full">' +
                                 '<div class="margin-top-l">'+
-                                    '<div data-group="' + key + '" class="text-caps font-bold bgap-l"><img class="icon icon-sitemap margin-right-s align-middle" src="images/icons/grey/' + images[key] + '" alt=""><span class="margin-right-s align-middle">' +  key + '</span>' +
-                                    '<img class="expand-collapse caret-right icon-sitemap margin-right align-middle rotated-icon margin-left-s" src="images/icons/caret_right_100.png" alt=""></div>' +
+                                    '<div data-group="' + key + '" class="text-caps font-bold bgap-l"><span class="categoryHeader"><img class="icon icon-sitemap margin-right-s align-middle" src="images/icons/grey/' + images[key] + '" alt=""><span class="margin-right-s align-middle">' +  key + '</span>' +
+                                    '<img class="expand-collapse caret-right icon-sitemap margin-right align-middle rotated-icon margin-left-s" src="images/icons/caret_right_100.png" alt=""></span></div>' +
                                         child +
                                 '</div>' +
                             '</div>'
                         :  '<div class="columns six full">' +
                                 '<div class="margin-top-l">'+
-                                        '<div data-group="' + key + '" class="text-caps font-bold bgap-l"><img class="icon icon-sitemap margin-right-s align-middle" src="images/icons/grey/' + images[key] + '" alt=""><span class="margin-right-s align-middle">' +  key + '</span>' +
-                                        '<img class="expand-collapse caret-right margin-right icon-sitemap align-middle rotated-icon margin-left-s" src="images/icons/caret_right_100.png" alt=""></div>' +
+                                        '<div data-group="' + key + '" class="text-caps font-bold bgap-l"><span class="categoryHeader"><img class="icon icon-sitemap margin-right-s align-middle" src="images/icons/grey/' + images[key] + '" alt=""><span class="margin-right-s align-middle">' +  key + '</span>' +
+                                        '<img class="expand-collapse caret-right margin-right icon-sitemap align-middle rotated-icon margin-left-s" src="images/icons/caret_right_100.png" alt=""></span></div>' +
                                         child +                                
                                 '</div>' +
                             '</div>'+
@@ -931,9 +931,9 @@
                     }        
             $('.container').append(catStr);
 
-             $(document).on('click', '[data-group]', function() {
-                var $header = $(this).next('ul.catL2'),
-                    $caret = $(this).find('img.expand-collapse'); 
+             $(document).on('click', '[data-group]>.categoryHeader', function() {
+                var $header = $(this).parent().next('ul.catL2'),
+                    $caret = $(this).parent().find('img.expand-collapse'); 
                     if(!$header.find('li').is(':visible')){
                         $header.slideDown();
                         $caret.addClass('rotated-icon');
