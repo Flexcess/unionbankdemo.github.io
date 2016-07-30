@@ -68,8 +68,8 @@
                 'MSME': ['MSME Overview', 'MSME Policy', 'Credit', 'Schemes', 'Channel Finance', 'Other Services', 'MSME Contact Points', 'MUDRA', 'Stand-Up India'],
                 'International': ['Exports', 'Remittances', 'Network', 'Other Services', 'Treasury', 'Products', 'International FAQs'],
                 'Rural & Agri': ['Short Term Credit', 'Long Term Credit', 'Other Credit', 'Financial Inclusion', 'CSR', 'Partners With Govt', 'Minority Welfare'],
-                'Corporate' : ['Deposit Accounts', 'Credit', 'Loan Syndication & Advisory', 'Selected Treasury Products', 'Government Business', 'Other Services', 'FAQs'],
-                'Financial Inclusion': ['Model For FI', 'PMJJBY','Products For FI', 'Schemes Implemented', 'CSR', 'Useful Information', 'PMJDY', 'PMJJBY', 'PMSBY'],
+                'Corporate' : ['Deposit Accounts', 'Credit', 'Loan Syndication & Advisory', 'Selected Treasury Products', 'Government Business', 'Other Services', 'Useful Information', 'FAQs'],
+                'Financial Inclusion': ['Model For FI', 'Products For FI', 'Schemes Implemented', 'CSR', 'Useful Information', 'PMJDY', 'PMJJBY', 'PMSBY'],
                 'Govt. Business': ['Departmentalized Ministries Accounts', 'Government Savings Schemes', 'Tax Collection', 'Pension'],               
                 'Investor Relations': ['Shareholders Information', 'Shareholding Pattern Overview', 'Annual Reports', 'Performance', 'Press Releases', 'Presentations'],                               
                 'About Us': ['Profile', 'Joint Venture', 'Investor Relations', 'Policies & Codes', 'Training System', 'Careers', 'KYC', 'Risk Management', 'CSR', 'MISC'],
@@ -78,6 +78,8 @@
                 'Direct Navigation_Quick Link Menu' : {
                                                         'Chief Customer Care Officer' : 'Chief Customer Care Officer',
                                                         'Customer Service Point' : 'Customer Service Point',
+                                                        'Rates & Charges' : 'Interest Rates & Charges',
+                                                        'Selfie Account' : 'Selfie Account',
                                                         },                                                      
                 'Personal_Accounts': {'Current Accounts': {
                                                             'Regular Current Account' : 'personal/RegularCurrentAccount.html',     
@@ -124,6 +126,7 @@
                                                                  'Overview' : 'personal/MobileBankingOverview.html',
                                                                  'Online Mobile Banking Registration' : 'https://www.unionbankonline.co.in/corp/BANKAWAY?Action.UBIMobileUser.Online=Y&amp;AppSignonBankId=026&amp;AppType=corporate',
                                                                  'FAQ for IMPS' : 'personal/IMPSFAQ.html',
+                                                                 'IMPS Guidelines' : 'personal/IMPSGuidelines.html',
                                                                  'SMS based IMPS' : 'personal/SMSBasedIMPS.html',
                                                                  'IMPS Member Bank' : 'http://www.npci.org.in/bankmember.aspx',
                                                                 },
@@ -229,8 +232,14 @@
                                                                     'NRE & NRO features in tabular form' : 'personal/NRETabularNRO.html',
                                                                     'Double Tax Avoidance Agreement' : 'personal/DoubleTaxAvoidanceAgreement.html',
                                                                 },
-                                    'Savings Account': 'NRE Savings Account',
-                                    'Current Account': 'NRE Current Account',
+                                    'Savings Account':  {
+                                                         'NRE Savings Account' : 'personal/NRESavingsAccount.html',   
+                                                         'NRO Savings Account' : 'personal/NROSavingsAccount.html',   
+                                                        },
+                                    'Current Account': {
+                                                         'NRE Current Account' : 'personal/NRECurrentAccount.html',   
+                                                         'NRO Current Account' : 'personal/NROCurrentAccount.html',   
+                                                        },
                                     'Fixed Deposit[Rupees]': {
                                                                 'NRE Fixed Deposit Receipt' : 'personal/NREFD.html',
                                                                 'NRO Fixed Deposit Receipt' : 'personal/NROFD.html',
@@ -284,7 +293,7 @@
                                                                     'DIFC Branch' : 'personal/DIFC_Branch.html',
                                                                     'Antwerp Branch' : 'personal/ANTWERP_BRANCH.html',
                                                                     'London Subsidiary' : 'personal/IBD_Network_SUBSIDIARY_UK.html',
-                                                                    'Abu Dhabi Representative Office' : 'personal/IBD_Network_Abhdhavi.html',
+                                                                    'Abu Dhabi Representative Office' : 'personal/IBD_Network_AbuDhabi.html',
                                                                     'Beijing Representative Office' : 'personal/IBD_Network_Bejing.html',
                                                                     'Shanghai Representative Office' : 'personal/IBD_Network_Shanghai.html',
                                                                     'Sydney Representative Office' : 'personal/IBD_Network_Sydney.html',
@@ -310,7 +319,7 @@
                                                'Currency Swaps' : 'Currency Swaps', 
                                                'Options' : 'Options', 
                                             },    
-                 'International_International FAQs' : {'FAQ' : 'NRI FAQ',},                          
+                 'International_International FAQs' : {'FAQ' : 'FAQ',},                          
                  'Financial Inclusion_Model For FI' : {'Introduction' : 'Financial Inclusion'},
                  'Financial Inclusion_Products For FI' : {
                                                             // 'No Frills Account': 'NoFrillsAccount'
@@ -419,6 +428,9 @@
                       'Corporate_Other Services' : { 'ECGC' : 'ECGC Cover',
                                                       'Cash Management Services' : 'MSME Cash Management',
                                                     },
+                      'Corporate_Useful Information' : { 
+                                                        'Economic Analysis' : 'Economic Analysis',
+                                                        },
                       'Corporate_Government Business': {'Direct Taxes': 'Direct Taxes',
                                             'Indirect Taxes': 'Indirect Taxes',
                                             'State Tax Collections': 'State Tax Collections',
@@ -468,6 +480,8 @@
                                                                                 'Union Kamadhenu' : 'personal/UnionKamadhenu.html',
                                                                                 'Union Pragati' : 'personal/UnionPragati.html',
                                                                                 'Union Saubhagya' : 'personal/UnionSaubhagya.html',
+                                                                                'Hawker Insurance' : 'personal/HawkerInsurance.html',
+                                                                                'Janashree Bima Yojana' : 'personal/JanashreeBimaYojna.html'
                                                                             },
                                                          'Projects Undertaken' : {
                                                                                     'Hawkers Project' : 'personal/HawkersProject.html',  
@@ -549,12 +563,16 @@
                                         },  
                      'About Us_MISC'  : {'May We Help You' : 'Conversations',
                                           'Testimonial' : 'Testimonials',
-                                          'About this Website' : 'About Website'}
+                                          'About this Website' : 'About Website',
+                                          'Forms' : 'Application Forms',
+                                        }
                 },
 
                 l2_link = {
-                'Direct Navigation_Quick Link Menu' : {'Chief Customer Care Officer' : 'personal/ChiefCustomerCareOfficer.html',
+                'Direct Navigation_Quick Link Menu' : { 'Chief Customer Care Officer' : 'personal/ChiefCustomerCareOfficer.html',
                                                         'Customer Service Point' : 'personal/CustomerServicePoint.html',
+                                                        'Rates & Charges' : 'personal/InterestRate.html',
+                                                        'Selfie Account' : 'personal/SelfieAccount.html',
                                                         },                                                       
                 'Personal_Accounts': {'Current Accounts': 'personal/RegularCurrentAccount.html',
                                     'Savings Accounts': 'personal/RegularSavingAccounts.html', 
@@ -666,7 +684,7 @@
                                                'Currency Swaps' : 'personal/CurrencySwaps.html', 
                                                'Options' : 'personal/Options.html', 
                                             },  
-                'International_International FAQs' : {'FAQ' : 'personal/NRIFAQ.html',},                          
+                'International_International FAQs' : {'FAQ' : 'personal/InternationalFAQ.html',},                          
                  'Financial Inclusion_Model For FI' : {'Introduction' : 'personal/FinancialInclusion.html'},
                  'Financial Inclusion_Products For FI' : {
                                                             // 'No Frills Account': 'personal/NoFrillsAccount.html'
@@ -683,7 +701,7 @@
                  'Financial Inclusion_CSR' : {'Village Knowledge Center': 'personal/VKC.html'},
                  'Financial Inclusion_Useful Information' : {'Useful Information': '/pdf/RABD-Useful info-Villages with 2000 plus Population.pdf'},  
                   'Financial Inclusion_PMJDY' : {'PMJDY': 'personal/PMJDY-FAQ.html'},  
-                 'Financial Inclusion_PMJJBY' : {'PMJJBY': 'personal/PMJBY-FAQ.html'},  
+                 'Financial Inclusion_PMJJBY' : {'PMJJBY': 'personal/PMJJBY.html'},  
                  'Financial Inclusion_PMSBY' : {'PMSBY': 'personal/PMSBY.html'},  
                  'Govt. Business_Departmentalized Ministries Accounts' : {'DMA Overview' : 'personal/DeptMinistriesAccount.html'},
                  'Govt. Business_Government Savings Schemes' : {'PPF' : 'personal/PublicProvidentFund.html',
@@ -767,6 +785,9 @@
                       'Corporate_Other Services' : { 'ECGC' : 'personal/ECGCCover.html',
                                                       'Cash Management Services' : 'personal/MSMECashManagement.html',
                                                     },
+                        'Corporate_Useful Information' : { 
+                                                            'Economic Analysis' : 'personal/EconomicAnalysis.html',
+                                                        },
                       'Corporate_Government Business': {'Direct Taxes': 'personal/DirectTaxes.html',
                                             'Indirect Taxes': 'personal/IndirectTaxes.html',
                                             'State Tax Collections': 'personal/StateTaxCollections.html',
@@ -871,11 +892,14 @@
                                         },  
                      'About Us_MISC'  : {'May We Help You' : 'personal/Conversations.html',
                                           'Testimonial' : 'personal/Testimonials.html',
-                                          'About this Website' : 'personal/AboutWebsite.html'}                                                  
+                                          'About this Website' : 'personal/AboutWebsite.html',
+                                          'Forms' : 'personal/FormsDetail.html',
+                                        }                                                  
         };
 
             var catStr = '',count = 0, pagesStr = '<ul class="font-s">';
             var images = {
+                        'Direct Navigation' : 'personal.png',
                         'Personal' : 'personal.png',
                         'NRI' : 'nri.png',
                         'International' : 'int.png',
