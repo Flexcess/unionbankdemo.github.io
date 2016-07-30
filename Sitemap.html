@@ -62,6 +62,7 @@
     <script>
         $(function(){
               var map = {
+                'Direct Navigation': ['Quick Link Menu'],
                 'Personal': ['Accounts', 'Retail Loans', 'Online Payments', 'Digital Banking', 'Cards', 'PMJDY', 'Insurance & Investment', 'Other Service', 'TVC'],
                 'NRI': ['NRI Deposit', 'NRI Investments', 'NRI Remittances', 'NRI Loans', 'NRI FAQs'],
                 'MSME': ['MSME Overview', 'MSME Policy', 'Credit', 'Schemes', 'Channel Finance', 'Other Services', 'MSME Contact Points', 'MUDRA', 'Stand-Up India'],
@@ -73,10 +74,15 @@
                 'Investor Relations': ['Shareholders Information', 'Shareholding Pattern Overview', 'Annual Reports', 'Performance', 'Press Releases', 'Presentations'],                               
                 'About Us': ['Profile', 'Joint Venture', 'Investor Relations', 'Policies & Codes', 'Training System', 'Careers', 'KYC', 'Risk Management', 'CSR', 'MISC'],
                 },
-        l2_map = {                                                       
+        l2_map = {
+                'Direct Navigation_Quick Link Menu' : {
+                                                        'Chief Customer Care Officer' : 'Chief Customer Care Officer',
+                                                        'Customer Service Point' : 'Customer Service Point',
+                                                        },                                                      
                 'Personal_Accounts': {'Current Accounts': {
                                                             'Regular Current Account' : 'personal/RegularCurrentAccount.html',     
                                                             'Union Classic Current A/c (Corporate)' : 'personal/FirmClassicCurrentAccount.html',     
+                                                            'Union Classic Current A/C [Banks]' : 'personal/BankClassicCurrentAccount.html',     
                                                             },
                                     'Savings Accounts': {
                                                             'Basic Savings Accounts' : 'personal/BasicSavingsAccount.html',     
@@ -162,7 +168,7 @@
                                             'Donations': 'Donations',
                                             'MCA21 Service transformation Online Payment' : 'MCA21 Service transformation Online Payment',
                                             'E-Ticketing KIOSK': 'E-Ticketing KIOSK',
-                                            'Online DGFT Payment': 'Exch Rate Others'},                                                                
+                                            'Online DGFT Payment': 'Online DGFT Payment'},                                                                
                 'Personal_Other Service': { 'Collection Of Cheques' : 'Multi City ChequeBook',
                                             'Union Reach - IAVR Banking' : 'Union Reach IAVR Banking',
                                             'Call Center 24*7': 'Call Center Overview'},                                                                
@@ -306,7 +312,6 @@
                                             },    
                  'International_International FAQs' : {'FAQ' : 'NRI FAQ',},                          
                  'Financial Inclusion_Model For FI' : {'Introduction' : 'Financial Inclusion'},
-                 'Financial Inclusion_PMJJBY' : {'Pradhan Mantri Jeevan Jyoti Bima Yojana': 'PMJBY'},
                  'Financial Inclusion_Products For FI' : {
                                                             // 'No Frills Account': 'NoFrillsAccount'
                                                             'Products for FI': 'Remittance Product',
@@ -547,7 +552,10 @@
                                           'About this Website' : 'About Website'}
                 },
 
-                l2_link = {                                                       
+                l2_link = {
+                'Direct Navigation_Quick Link Menu' : {'Chief Customer Care Officer' : 'personal/ChiefCustomerCareOfficer.html',
+                                                        'Customer Service Point' : 'personal/CustomerServicePoint.html',
+                                                        },                                                       
                 'Personal_Accounts': {'Current Accounts': 'personal/RegularCurrentAccount.html',
                                     'Savings Accounts': 'personal/RegularSavingAccounts.html', 
                                     'Salary Accounts': 'personal/UnionSuperSalaryAccount.html', 
@@ -587,7 +595,7 @@
                                             'Donations': 'personal/Donations.html',
                                             'MCA21 Service transformation Online Payment' : 'http://www.mca.gov.in/MCA21/',
                                             'E-Ticketing KIOSK': 'pdf/personal-online%20payments-EticketingKiosk.pdf',
-                                            'Online DGFT Payment': 'personal/ExchRateOthers.html'},                                                                
+                                            'Online DGFT Payment': 'personal/OnlineDGFTPayment.html'},                                                                
                 'Personal_Other Service': { 'Collection Of Cheques' : 'MultiCityChequeBook.html',
                                             'Call Center 24*7': 'personal/CallCenterOverview.html',
                                             'Union Reach - IAVR Banking' : 'personal/UnionReachIAVRBanking.html',
@@ -660,7 +668,6 @@
                                             },  
                 'International_International FAQs' : {'FAQ' : 'personal/NRIFAQ.html',},                          
                  'Financial Inclusion_Model For FI' : {'Introduction' : 'personal/FinancialInclusion.html'},
-                 'Financial Inclusion_PMJJBY' : {'Pradhan Mantri Jeevan Jyoti Bima Yojana': 'personal/PMJBY.html'},
                  'Financial Inclusion_Products For FI' : {
                                                             // 'No Frills Account': 'personal/NoFrillsAccount.html'
                                                             'Products for FI': 'personal/RemittanceProduct.html',
@@ -829,6 +836,8 @@
                     'Investor Relations_Press Releases' : {'Working Results' : 'personal/PressReleases.html'},                                                   
                     'Investor Relations_Presentations' : {'Financial Results' : 'personal/FinancialResults.html'},            
                    'About Us_Profile'   : {'Union Bank of India - Overview' : 'personal/UBIOverview.html',
+                                           'Corporate Vision' : 'personal/CorporateVision.html',                   
+                                           'Corporate Mission' : 'personal/CorporateMision.html',
                                            'Board of Directors': 'personal/DirectorsList.html',
                                            'Organizational Chart' : 'personal/OrgChart.html',
                                            'Awards & Commendations' : 'personal/Awards.html',          
