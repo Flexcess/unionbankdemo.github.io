@@ -48,7 +48,7 @@
                 'Corporate' : ['Deposit Accounts', 'Credit', 'Loan Syndication & Advisory', 'Selected Treasury Products', 'Government Business', 'Other Services', 'FAQs'],
                 'Financial Inclusion': ['Model For FI', 'PMJJBY','Products For FI', 'Schemes Implemented', 'CSR', 'Useful Information', 'PMJDY', 'PMJJBY', 'PMSBY'],
                 'Govt. Business': ['Departmentalized Ministries Accounts', 'Government Savings Schemes', 'Tax Collection', 'Pension'],               
-                'Investor Relations': ['Shareholders Information', 'Shareholding Pattern Overview', 'Annual Reports', 'Performance', 'Press Releases', 'Presentations'],                               
+                'Investor Relations': ['Shareholders Information', 'Shareholding Pattern Overview', 'Annual Reports', 'Performance', 'Press Releases', 'Presentations', 'Disclosures to Stock Exchanges'],                               
                 'About Us': ['Profile', 'Joint Venture', 'Investor Relations', 'Policies & Codes', 'Training System', 'Careers', 'KYC', 'Risk Management', 'CSR', 'MISC'],
                 },
         l2_map = {                                                       
