@@ -316,6 +316,7 @@
                                                                             'Updates' : 'personal/DSEUpdates.html',
                                                                             'Loss of share certificates' : 'personal/LossOfShareCertificates.html',
                                                                             'Issue of duplicate share certificates' : 'personal/IssueDuplicateShareCertificates.html',
+                                                                            'Schedule of Analyst or institutional investor meet' : 'personal/AnalystOrInstitutionalInvestorMeetingSchedule.html',
                                                                             },                                      
                     'Investor Relations_Presentations' : {'Financial Results' : 'personal/FinancialResults.html'},            
                    'About Us_Profile'   : {'Union Bank of India - Overview' : 'personal/UBIOverview.html',
