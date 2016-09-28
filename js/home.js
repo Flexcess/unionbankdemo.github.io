@@ -350,7 +350,7 @@
                                                        'Shareholding Pattern': 'personal/ShareholdingPatternOverview.html',
                                                        'Annual Reports' : 'personal/AnnualReports.html',                                        
                                                     'Press Releases' : 'personal/PressReleases.html', 
-                                                     'ChiefVigilanceOfficer'  : 'personal/ChiefVigilanceOfficer.html',
+                                                     'Chief Vigilance Officer'  : 'personal/ChiefVigilanceOfficer.html',
                                                      'Investor Grievance Redressal Mechanism' : 'personal/InvestorGrievanceRedressalMechanism.html',
                                                   }, 
                    'About Us_Training System'   : {'Overview': 'personal/TrainingSystem.html',
