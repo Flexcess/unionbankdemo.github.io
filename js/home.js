@@ -170,7 +170,7 @@
                  'Financial Inclusion_PMSBY' : {'Pradhan Mantri Suraksha Bima Yojana [PMSBY]': 'personal/PMSBY.html'},  
                  'Govt. Business_Departmentalized Ministries Accounts' : {'DMA Overview' : 'personal/DeptMinistriesAccount.html'},
                  'Govt. Business_Government Savings Schemes' : { 'PPF' : 'personal/PublicProvidentFund.html',
-                                                                 'Senior Citizens Savings scheme' : 'personal/SeniorCitizensScheme.html', 
+                                                                 'Senior Citizens Savings Scheme' : 'personal/SeniorCitizensScheme.html', 
                                                                  'National Pension System (NPS)' : 'personal/NationalPensionSystem.html',
                                                                  'Sukanya Samriddhi Scheme (SSS)' : 'personal/SukanyaSamriddhiScheme.html',
                                                                  'Kisan Vikas Patra' : 'personal/KisanVikasPatra.html',
