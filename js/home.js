@@ -327,6 +327,7 @@
                     'Investor Relations_Performance' : {'Performance Reports' : 'personal/RBIFormatReports.html'},                                                   
                     'Investor Relations_Press Releases' : {'Working Results' : 'personal/PressReleases.html',
                                                            'Advertisements in Newspapers' : 'personal/AdvertisementsNewspapers.html',
+                                                           'Press Releases' : 'personal/PressReleases.html',
                                                           },             
                     'Investor Relations_Disclosures to Stock Exchanges' : {
                                                                             'Notice of Board Meeting' : 'personal/BoardMeeting.html',
