@@ -264,6 +264,7 @@
                                                       'Cash Management Services' : 'MSMECashManagement.html',
                                                     },
                       'Corporate_Government Business': {'Direct Taxes': 'personal/DirectTaxes.html',
+                                            'Central Taxes': 'personal/CentralTaxes.html',
                                             'Indirect Taxes': 'personal/IndirectTaxes.html',
                                             'State Tax Collections': 'personal/StateTaxCollections.html',
                                             'New Pension Scheme 2009': 'personal/NewPensionScheme.html',
