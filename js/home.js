@@ -56,7 +56,7 @@
                                     'Savings Accounts': 'personal/RegularSavingAccounts.html', 
                                     'Salary Accounts': 'personal/UnionSuperSalaryAccount.html', 
                                     'Recurring Deposit Scheme': 'personal/OrdinaryCumulativeDeposit.html',
-                                    'Fixed Deposit Accounts': 'personal/FDAccounts.html',
+                                    'Fixed Deposit Accounts': 'personal/ShortDepositReceipt.html',
                                     'Demat Accounts': 'personal/DematAccounts.html',
                                     'Online Trading Accounts': 'personal/OnlineTradingAccounts.html',
                                     'Useful Information': 'personal/UsefulInfo.html'},
